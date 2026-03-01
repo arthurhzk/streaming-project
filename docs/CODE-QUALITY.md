@@ -6,44 +6,94 @@
 
 ## ESLint
 
+> ⚠️ **ESLint 9+** uses the new **flat config** format. The legacy `.eslintrc.js` file is no longer supported. Always use `eslint.config.js`.
+
 ### Configuration Hierarchy
 
-1. **Base config** (`packages/eslint-config`): Core rules shared across all services
-2. **Service config** (`.eslintrc.js` per service): Extends base, may add service-specific overrides
+1. **Base config** (`packages/eslint-config/index.js`): Core rules shared across all services
+2. **Service config** (`eslint.config.js` per service): Imports base, may add service-specific overrides
 
 ### Required Plugins
 
 The base config in `packages/eslint-config` must include:
 
-- `@typescript-eslint/eslint-plugin`
-- `@typescript-eslint/parser`
+- `typescript-eslint`
 - `eslint-plugin-import`
-- `eslint-plugin-node`
+- `eslint-plugin-n` (replaces `eslint-plugin-node` for ESLint 9)
 - `eslint-plugin-promise`
 - `eslint-plugin-security`
 - `eslint-config-prettier` (disables rules that conflict with Prettier)
 
-### Service ESLint Config
+### Base Config (`packages/eslint-config/index.js`)
 
 ```javascript
-// apps/my-service/.eslintrc.js
-module.exports = {
-  extends: ['@repo/eslint-config'],
-  parserOptions: {
-    project: './tsconfig.json',
+// packages/eslint-config/index.js
+import tseslint from "typescript-eslint";
+import importPlugin from "eslint-plugin-import";
+import nodePlugin from "eslint-plugin-n";
+import promisePlugin from "eslint-plugin-promise";
+import securityPlugin from "eslint-plugin-security";
+import prettier from "eslint-config-prettier";
+
+export default tseslint.config(
+  ...tseslint.configs.recommended,
+  {
+    plugins: {
+      import: importPlugin,
+      n: nodePlugin,
+      promise: promisePlugin,
+      security: securityPlugin,
+    },
+    rules: {
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-explicit-any": "warn",
+      "import/no-relative-parent-imports": "error", // enforces alias imports
+      "promise/always-return": "error",
+      "security/detect-object-injection": "warn",
+    },
+  },
+  prettier,
+);
+```
+
+### Service ESLint Config (`eslint.config.js`)
+
+```javascript
+// apps/my-service/eslint.config.js
+import baseConfig from "@repo/eslint-config";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config(...baseConfig, {
+  languageOptions: {
+    parserOptions: {
+      project: "./tsconfig.json",
+      tsconfigRootDir: import.meta.dirname,
+    },
   },
   rules: {
     // Service-specific overrides only if truly necessary
   },
-};
+});
 ```
+
+### `package.json` lint script
+
+```json
+{
+  "scripts": {
+    "lint": "eslint src"
+  }
+}
+```
+
+> Note: The `--ext .ts` flag is no longer needed in ESLint 9. File extensions are configured inside `eslint.config.js`.
 
 ### Rules Philosophy
 
 - **Strict by default**: Enforce best practices across the board
 - **TypeScript-first**: Leverage the type system to catch errors early
 - **Security-conscious**: `eslint-plugin-security` catches common vulnerabilities
-- **Import discipline**: Enforces the `@service-name/*` alias pattern (no relative imports)
+- **Import discipline**: `import/no-relative-parent-imports` enforces the `@service-name/*` alias pattern
 
 ---
 
@@ -55,18 +105,18 @@ All services extend the shared config from `packages/prettier-config`.
 
 ```javascript
 // apps/my-service/.prettierrc.js
-module.exports = require('@repo/prettier-config');
+module.exports = require("@repo/prettier-config");
 ```
 
 ### Formatting Rules
 
-| Rule | Value |
-|---|---|
-| Quotes | Single |
-| Trailing commas | All |
-| Indentation | 2 spaces |
-| Print width | 100 |
-| Semicolons | true |
+| Rule            | Value    |
+| --------------- | -------- |
+| Quotes          | Single   |
+| Trailing commas | All      |
+| Indentation     | 2 spaces |
+| Print width     | 100      |
+| Semicolons      | true     |
 
 ---
 
@@ -131,10 +181,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint        # Fails on ESLint errors
-      - run: pnpm run format      # Fails on Prettier violations
-      - run: pnpm run build       # Fails on TypeScript errors
-      - run: pnpm run test        # Fails on test failures
+      - run: pnpm run lint # Fails on ESLint errors
+      - run: pnpm run format # Fails on Prettier violations
+      - run: pnpm run build # Fails on TypeScript errors
+      - run: pnpm run test # Fails on test failures
 ```
 
 ---
@@ -164,4 +214,4 @@ pnpm --filter <service-name> run test:coverage
 ---
 
 **Last Updated**: 2026-03-01  
-**Version**: 1.1.0
+**Version**: 1.2.0

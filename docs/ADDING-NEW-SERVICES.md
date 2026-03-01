@@ -35,7 +35,7 @@ mkdir -p apps/my-service/tests
     "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "lint": "eslint src --ext .ts",
+    "lint": "eslint src",
     "format": "prettier --write src",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage"
@@ -71,35 +71,42 @@ mkdir -p apps/my-service/tests
 
 ### 4. Configure ESLint
 
+> ⚠️ ESLint 9+ requires `eslint.config.js` (flat config). Do not use `.eslintrc.js`.
+
 ```javascript
-// apps/my-service/.eslintrc.js
-module.exports = {
-  extends: ['@repo/eslint-config'],
-  parserOptions: {
-    project: './tsconfig.json',
+// apps/my-service/eslint.config.js
+import baseConfig from "@repo/eslint-config";
+import tseslint from "typescript-eslint";
+
+export default tseslint.config(...baseConfig, {
+  languageOptions: {
+    parserOptions: {
+      project: "./tsconfig.json",
+      tsconfigRootDir: import.meta.dirname,
+    },
   },
-};
+});
 ```
 
 ### 5. Configure Prettier
 
 ```javascript
 // apps/my-service/.prettierrc.js
-module.exports = require('@repo/prettier-config');
+module.exports = require("@repo/prettier-config");
 ```
 
 ### 6. Configure Vitest
 
 ```typescript
 // apps/my-service/vitest.config.ts
-import { defineConfig } from 'vitest/config';
-import baseConfig from '@repo/vitest-config';
+import { defineConfig } from "vitest/config";
+import baseConfig from "@repo/vitest-config";
 
 export default defineConfig({
   ...baseConfig,
   resolve: {
     alias: {
-      '@my-service': './src',
+      "@my-service": "./src",
     },
   },
 });
@@ -109,7 +116,7 @@ export default defineConfig({
 
 ```typescript
 // apps/my-service/src/index.ts
-import env from '@my-service/config/env';
+import env from "@my-service/config/env";
 
 async function bootstrap() {
   // Initialize your app here
@@ -123,13 +130,17 @@ bootstrap().catch(console.error);
 
 ```typescript
 // apps/my-service/src/config/env.ts
-import { z } from 'zod';
+import { z } from "zod";
 
-const env = z.object({
-  PORT: z.coerce.number().default(3000),
-  NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
-  DATABASE_URL: z.string().url(),
-}).parse(process.env);
+const env = z
+  .object({
+    PORT: z.coerce.number().default(3000),
+    NODE_ENV: z
+      .enum(["development", "production", "test"])
+      .default("development"),
+    DATABASE_URL: z.string().url(),
+  })
+  .parse(process.env);
 
 export default env;
 ```
@@ -159,7 +170,7 @@ Before opening a PR for a new service, confirm:
 - [ ] `tsconfig.json` extends `@repo/tsconfig/node.json`
 - [ ] Import alias `@my-service/*` is configured in `tsconfig.json`
 - [ ] **Zero relative imports** — all imports use `@my-service/*`
-- [ ] ESLint config extends `@repo/eslint-config`
+- [ ] ESLint flat config (`eslint.config.js`) imports `@repo/eslint-config`
 - [ ] Prettier config extends `@repo/prettier-config`
 - [ ] `pnpm run lint` passes with no errors
 - [ ] `pnpm run build` passes with no errors
@@ -172,15 +183,16 @@ Before opening a PR for a new service, confirm:
 
 ## Common Mistakes
 
-| Mistake | Fix |
-|---|---|
-| Using `../` in imports | Replace with `@my-service/*` alias |
-| Copying `tsconfig.json` without updating `paths` | Update `@my-service/*` to match your service name |
-| Hardcoding database URLs | Use `process.env.DATABASE_URL` |
-| Forgetting to run `pnpm install` | Run it after creating `package.json` |
-| Service name doesn't match alias | Directory name and alias must match exactly |
+| Mistake                                            | Fix                                                  |
+| -------------------------------------------------- | ---------------------------------------------------- |
+| Using `../` in imports                             | Replace with `@my-service/*` alias                   |
+| Copying `tsconfig.json` without updating `paths`   | Update `@my-service/*` to match your service name    |
+| Hardcoding database URLs                           | Use `process.env.DATABASE_URL`                       |
+| Forgetting to run `pnpm install`                   | Run it after creating `package.json`                 |
+| Service name doesn't match alias                   | Directory name and alias must match exactly          |
+| Using `.eslintrc.js` instead of `eslint.config.js` | ESLint 9+ requires flat config — see CODE-QUALITY.md |
 
 ---
 
 **Last Updated**: 2026-03-01  
-**Version**: 1.1.0
+**Version**: 1.2.0
