@@ -1,5 +1,7 @@
+import 'reflect-metadata';
 import 'dotenv/config';
 import { NestFactory } from '@nestjs/core';
+import { ValidationPipe } from '@nestjs/common';
 import env from '@auth-service/config/env';
 import { AppModule } from '@auth-service/app.module';
 import { createLogger } from '@repo/logger';
@@ -8,6 +10,12 @@ const logger = createLogger('auth-service');
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.useGlobalPipes(
+    new ValidationPipe({
+      whitelist: true,
+      forbidNonWhitelisted: true,
+    }),
+  );
   await app.listen(env.PORT);
   logger.info(`Auth service listening on port ${env.PORT}`);
 }
