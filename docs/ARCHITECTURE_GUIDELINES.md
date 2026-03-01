@@ -36,6 +36,7 @@ This monorepo follows a **Turborepo** architecture pattern, enabling efficient d
 | [SERVICE-BOUNDARIES.md](./SERVICE-BOUNDARIES.md)     | Isolation, HTTP communication, databases | Designing inter-service communication    |
 | [DEVELOPMENT-WORKFLOW.md](./DEVELOPMENT-WORKFLOW.md) | Turborepo, builds, caching               | Running and building the project         |
 | [ADDING-NEW-SERVICES.md](./ADDING-NEW-SERVICES.md)   | Step-by-step service creation checklist  | Creating a new service from scratch      |
+| [PRISMA-CONFIG.md](./PRISMA-CONFIG.md)               | Prisma setup, migrations, connection     | Working with databases or Prisma         |
 
 ---
 
@@ -47,7 +48,8 @@ This monorepo follows a **Turborepo** architecture pattern, enabling efficient d
 **IF** designing how services communicate → read [SERVICE-BOUNDARIES.md](./SERVICE-BOUNDARIES.md)  
 **IF** running builds or understanding Turborepo → read [DEVELOPMENT-WORKFLOW.md](./DEVELOPMENT-WORKFLOW.md)  
 **IF** understanding folder structure or naming → read [MONOREPO-STRUCTURE.md](./MONOREPO-STRUCTURE.md)  
-**IF** managing dependencies or pnpm commands → read [PACKAGE-MANAGER.md](./PACKAGE-MANAGER.md)
+**IF** managing dependencies or pnpm commands → read [PACKAGE-MANAGER.md](./PACKAGE-MANAGER.md)  
+**IF** working with databases or Prisma → read [PRISMA-CONFIG.md](./PRISMA-CONFIG.md)
 
 ---
 
@@ -60,6 +62,8 @@ This monorepo follows a **Turborepo** architecture pattern, enabling efficient d
 3. **Skipping pre-commit hooks** — Husky + lint-staged are mandatory, not optional → [CODE-QUALITY.md](./CODE-QUALITY.md)
 4. **Hardcoded service URLs** — Always use environment variables for inter-service communication → [SERVICE-BOUNDARIES.md](./SERVICE-BOUNDARIES.md)
 5. **Cross-database access** — Services must never query another service's database → [SERVICE-BOUNDARIES.md](./SERVICE-BOUNDARIES.md)
+6. **Prisma: wrong client import** — Import `PrismaClient` from `@service-name/generated/prisma/client`, not `@prisma/client` → [PRISMA-CONFIG.md](./PRISMA-CONFIG.md)
+7. **Prisma: missing driver adapter** — Use `PrismaPg` from `@prisma/adapter-pg` with connection string; do not pass URL directly to `PrismaClient` → [PRISMA-CONFIG.md](./PRISMA-CONFIG.md)
 
 ---
 
