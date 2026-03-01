@@ -82,10 +82,10 @@ pnpm --filter "./packages/*" run <script>
 
 ## Build Caching
 
-| Scenario | Behavior |
-|---|---|
-| Inputs unchanged | Cache hit — task is skipped |
-| Inputs changed | Cache miss — task runs and result is stored |
+| Scenario             | Behavior                                    |
+| -------------------- | ------------------------------------------- |
+| Inputs unchanged     | Cache hit — task is skipped                 |
+| Inputs changed       | Cache miss — task runs and result is stored |
 | Remote cache enabled | Cache shared across all team members and CI |
 
 To clear the local cache:
@@ -109,10 +109,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v3
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run lint        # Fails on ESLint errors
-      - run: pnpm run format      # Fails on Prettier violations
-      - run: pnpm run build       # Fails on TypeScript errors
-      - run: pnpm run test        # Fails on test failures
+      - run: pnpm run lint # Fails on ESLint errors
+      - run: pnpm run format # Fails on Prettier violations
+      - run: pnpm run build # Fails on TypeScript errors
+      - run: pnpm run test # Fails on test failures
 ```
 
 For faster CI runs, enable Turborepo remote caching to reuse results from previous pipeline runs.

@@ -28,12 +28,12 @@ The base config in `packages/eslint-config` must include:
 
 ```javascript
 // packages/eslint-config/index.js
-import tseslint from "typescript-eslint";
-import importPlugin from "eslint-plugin-import";
-import nodePlugin from "eslint-plugin-n";
-import promisePlugin from "eslint-plugin-promise";
-import securityPlugin from "eslint-plugin-security";
-import prettier from "eslint-config-prettier";
+import tseslint from 'typescript-eslint';
+import importPlugin from 'eslint-plugin-import';
+import nodePlugin from 'eslint-plugin-n';
+import promisePlugin from 'eslint-plugin-promise';
+import securityPlugin from 'eslint-plugin-security';
+import prettier from 'eslint-config-prettier';
 
 export default tseslint.config(
   ...tseslint.configs.recommended,
@@ -45,11 +45,11 @@ export default tseslint.config(
       security: securityPlugin,
     },
     rules: {
-      "@typescript-eslint/no-unused-vars": "error",
-      "@typescript-eslint/no-explicit-any": "warn",
-      "import/no-relative-parent-imports": "error", // enforces alias imports
-      "promise/always-return": "error",
-      "security/detect-object-injection": "warn",
+      '@typescript-eslint/no-unused-vars': 'error',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      'import/no-relative-parent-imports': 'error', // enforces alias imports
+      'promise/always-return': 'error',
+      'security/detect-object-injection': 'warn',
     },
   },
   prettier,
@@ -60,13 +60,13 @@ export default tseslint.config(
 
 ```javascript
 // apps/my-service/eslint.config.js
-import baseConfig from "@repo/eslint-config";
-import tseslint from "typescript-eslint";
+import baseConfig from '@repo/eslint-config';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config(...baseConfig, {
   languageOptions: {
     parserOptions: {
-      project: "./tsconfig.json",
+      project: './tsconfig.json',
       tsconfigRootDir: import.meta.dirname,
     },
   },
@@ -105,7 +105,7 @@ All services extend the shared config from `packages/prettier-config`.
 
 ```javascript
 // apps/my-service/.prettierrc.js
-module.exports = require("@repo/prettier-config");
+module.exports = require('@repo/prettier-config');
 ```
 
 ### Formatting Rules

@@ -75,11 +75,11 @@ For async, fire-and-forget or event-driven communication:
 
 ## Database Boundaries
 
-| Rule | Reason |
-|---|---|
-| One database per service | Enforces true isolation and independent deployability |
-| No cross-database queries | Prevents tight coupling at the data layer |
-| No shared ORM models | Each service defines its own entities |
+| Rule                             | Reason                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------- |
+| One database per service         | Enforces true isolation and independent deployability                     |
+| No cross-database queries        | Prevents tight coupling at the data layer                                 |
+| No shared ORM models             | Each service defines its own entities                                     |
 | Shared data access (last resort) | If unavoidable, create a dedicated shared package with explicit ownership |
 
 > **If you find yourself needing to query another service's database**, that's a signal that either the service boundary is wrong, or the data should be exposed via an API or shared event.
@@ -105,11 +105,13 @@ Use a validation library (e.g., `zod`, `envalid`) to validate required environme
 ```typescript
 import { z } from 'zod';
 
-const env = z.object({
-  DATABASE_URL: z.string().url(),
-  AUTH_SERVICE_URL: z.string().url(),
-  PORT: z.coerce.number().default(3000),
-}).parse(process.env);
+const env = z
+  .object({
+    DATABASE_URL: z.string().url(),
+    AUTH_SERVICE_URL: z.string().url(),
+    PORT: z.coerce.number().default(3000),
+  })
+  .parse(process.env);
 
 export default env;
 ```

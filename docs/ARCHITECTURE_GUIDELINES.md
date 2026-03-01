@@ -27,15 +27,15 @@ This monorepo follows a **Turborepo** architecture pattern, enabling efficient d
 
 ## Document Map
 
-| Document | Responsibility | When to Read |
-|---|---|---|
-| [MONOREPO-STRUCTURE.md](./MONOREPO-STRUCTURE.md) | Folder layout, naming conventions | Creating or navigating services/packages |
-| [PACKAGE-MANAGER.md](./PACKAGE-MANAGER.md) | pnpm setup and commands | Installing deps, workspace management |
-| [TYPESCRIPT-CONFIG.md](./TYPESCRIPT-CONFIG.md) | tsconfig, strict mode, import aliases | Any TypeScript work |
-| [CODE-QUALITY.md](./CODE-QUALITY.md) | ESLint, Prettier, Husky, CI | Setting up linting or pre-commit hooks |
-| [SERVICE-BOUNDARIES.md](./SERVICE-BOUNDARIES.md) | Isolation, HTTP communication, databases | Designing inter-service communication |
-| [DEVELOPMENT-WORKFLOW.md](./DEVELOPMENT-WORKFLOW.md) | Turborepo, builds, caching | Running and building the project |
-| [ADDING-NEW-SERVICES.md](./ADDING-NEW-SERVICES.md) | Step-by-step service creation checklist | Creating a new service from scratch |
+| Document                                             | Responsibility                           | When to Read                             |
+| ---------------------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| [MONOREPO-STRUCTURE.md](./MONOREPO-STRUCTURE.md)     | Folder layout, naming conventions        | Creating or navigating services/packages |
+| [PACKAGE-MANAGER.md](./PACKAGE-MANAGER.md)           | pnpm setup and commands                  | Installing deps, workspace management    |
+| [TYPESCRIPT-CONFIG.md](./TYPESCRIPT-CONFIG.md)       | tsconfig, strict mode, import aliases    | Any TypeScript work                      |
+| [CODE-QUALITY.md](./CODE-QUALITY.md)                 | ESLint, Prettier, Husky, CI              | Setting up linting or pre-commit hooks   |
+| [SERVICE-BOUNDARIES.md](./SERVICE-BOUNDARIES.md)     | Isolation, HTTP communication, databases | Designing inter-service communication    |
+| [DEVELOPMENT-WORKFLOW.md](./DEVELOPMENT-WORKFLOW.md) | Turborepo, builds, caching               | Running and building the project         |
+| [ADDING-NEW-SERVICES.md](./ADDING-NEW-SERVICES.md)   | Step-by-step service creation checklist  | Creating a new service from scratch      |
 
 ---
 

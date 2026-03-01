@@ -75,13 +75,13 @@ mkdir -p apps/my-service/tests
 
 ```javascript
 // apps/my-service/eslint.config.js
-import baseConfig from "@repo/eslint-config";
-import tseslint from "typescript-eslint";
+import baseConfig from '@repo/eslint-config';
+import tseslint from 'typescript-eslint';
 
 export default tseslint.config(...baseConfig, {
   languageOptions: {
     parserOptions: {
-      project: "./tsconfig.json",
+      project: './tsconfig.json',
       tsconfigRootDir: import.meta.dirname,
     },
   },
@@ -92,21 +92,21 @@ export default tseslint.config(...baseConfig, {
 
 ```javascript
 // apps/my-service/.prettierrc.js
-module.exports = require("@repo/prettier-config");
+module.exports = require('@repo/prettier-config');
 ```
 
 ### 6. Configure Vitest
 
 ```typescript
 // apps/my-service/vitest.config.ts
-import { defineConfig } from "vitest/config";
-import baseConfig from "@repo/vitest-config";
+import { defineConfig } from 'vitest/config';
+import baseConfig from '@repo/vitest-config';
 
 export default defineConfig({
   ...baseConfig,
   resolve: {
     alias: {
-      "@my-service": "./src",
+      '@my-service': './src',
     },
   },
 });
@@ -116,7 +116,7 @@ export default defineConfig({
 
 ```typescript
 // apps/my-service/src/index.ts
-import env from "@my-service/config/env";
+import env from '@my-service/config/env';
 
 async function bootstrap() {
   // Initialize your app here
@@ -130,14 +130,12 @@ bootstrap().catch(console.error);
 
 ```typescript
 // apps/my-service/src/config/env.ts
-import { z } from "zod";
+import { z } from 'zod';
 
 const env = z
   .object({
     PORT: z.coerce.number().default(3000),
-    NODE_ENV: z
-      .enum(["development", "production", "test"])
-      .default("development"),
+    NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
     DATABASE_URL: z.string().url(),
   })
   .parse(process.env);

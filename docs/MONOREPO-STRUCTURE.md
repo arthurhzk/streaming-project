@@ -87,13 +87,13 @@ packages/
 
 ### Required Packages
 
-| Package | Purpose |
-|---|---|
-| `eslint-config` | Centralized ESLint rules for all services |
-| `prettier-config` | Centralized Prettier formatting rules |
-| `tsconfig` | Shared TypeScript configurations (`base.json`, `node.json`) |
-| `vitest-config` | Centralized Vitest test setup and coverage config |
-| `shared-utils` | Reusable utilities shared across services |
+| Package           | Purpose                                                     |
+| ----------------- | ----------------------------------------------------------- |
+| `eslint-config`   | Centralized ESLint rules for all services                   |
+| `prettier-config` | Centralized Prettier formatting rules                       |
+| `tsconfig`        | Shared TypeScript configurations (`base.json`, `node.json`) |
+| `vitest-config`   | Centralized Vitest test setup and coverage config           |
+| `shared-utils`    | Reusable utilities shared across services                   |
 
 ### Adding New Shared Packages
 
@@ -114,13 +114,13 @@ packages/
 
 ## Naming Conventions
 
-| Scope | Convention | Examples |
-|---|---|---|
-| Service directories | kebab-case | `auth-service`, `user-service` |
-| Package directories | kebab-case | `shared-utils`, `eslint-config` |
-| Source files (utilities) | kebab-case | `token-validator.ts` |
-| Source files (classes) | PascalCase | `AuthController.ts` |
-| Import aliases | `@{service-name}/*` | `@auth-service/utils/token` |
+| Scope                    | Convention          | Examples                        |
+| ------------------------ | ------------------- | ------------------------------- |
+| Service directories      | kebab-case          | `auth-service`, `user-service`  |
+| Package directories      | kebab-case          | `shared-utils`, `eslint-config` |
+| Source files (utilities) | kebab-case          | `token-validator.ts`            |
+| Source files (classes)   | PascalCase          | `AuthController.ts`             |
+| Import aliases           | `@{service-name}/*` | `@auth-service/utils/token`     |
 
 ---
 
