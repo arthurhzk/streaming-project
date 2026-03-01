@@ -1,19 +1,17 @@
-import { ExceptionFilter, Catch, ArgumentsHost, HttpStatus } from '@nestjs/common';
+import { ExceptionFilter, Catch, ArgumentsHost, HttpStatus, HttpException } from '@nestjs/common';
 import { Response } from 'express';
 
 @Catch()
 export class ThrottlerExceptionFilter implements ExceptionFilter {
   catch(exception: unknown, host: ArgumentsHost): void {
-    const ctx = host.switchToHttp();
-    const res = ctx.getResponse<Response>();
+    const res = host.switchToHttp().getResponse<Response>();
 
-    const status =
-      exception &&
-      typeof exception === 'object' &&
-      'getStatus' in exception &&
-      typeof (exception as { getStatus: () => number }).getStatus === 'function'
-        ? (exception as { getStatus: () => number }).getStatus()
-        : HttpStatus.INTERNAL_SERVER_ERROR;
+    let status: number;
+    if (exception instanceof HttpException) {
+      status = exception.getStatus();
+    } else {
+      status = HttpStatus.INTERNAL_SERVER_ERROR;
+    }
 
     if (status === HttpStatus.TOO_MANY_REQUESTS) {
       res.status(status).json({
@@ -23,17 +21,20 @@ export class ThrottlerExceptionFilter implements ExceptionFilter {
       return;
     }
 
-    const message =
-      exception && typeof exception === 'object' && 'getResponse' in exception
-        ? (exception as { getResponse: () => unknown }).getResponse()
-        : 'Internal server error';
+    let message: unknown;
+    if (exception instanceof HttpException) {
+      message = exception.getResponse();
+    } else {
+      message = 'Internal server error';
+    }
 
-    res
-      .status(status)
-      .json(
-        typeof message === 'object' && message !== null
-          ? message
-          : { statusCode: status, message: String(message) },
-      );
+    let body: object;
+    if (typeof message === 'object' && message !== null) {
+      body = message;
+    } else {
+      body = { statusCode: status, message: String(message) };
+    }
+
+    res.status(status).json(body);
   }
 }

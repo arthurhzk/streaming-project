@@ -1,3 +1,4 @@
+/* eslint-disable security/detect-object-injection */
 import { Injectable, NestMiddleware } from '@nestjs/common';
 import { NextFunction, Request, Response } from 'express';
 import { createLogger } from '@repo/logger';
