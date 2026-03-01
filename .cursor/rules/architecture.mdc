@@ -1,0 +1,67 @@
+---
+description: Core architecture principles — always active
+globs: []
+alwaysApply: true
+---
+
+# Monorepo Architecture Principles
+
+**Structure:**
+- `apps/` = Bootstraps only (no business logic)
+- `packages/` = All business logic and shared configs
+- Each service is self-contained with clear boundaries
+
+**5 Critical Rules:**
+1. Never use relative imports (`./` or `../`) — always use `@service-name/*` aliases
+2. Never access another service's database directly
+3. Never hardcode service URLs — always use `process.env`
+4. Always use `"tasks"` in `turbo.json`, never `"pipeline"` (Turborepo v2+)
+5. Always use `eslint.config.js` (flat config) — never `.eslintrc.js` (ESLint 9+)
+
+---
+
+## 📚 Progressive Documentation Loading
+
+**CRITICAL**: Only load documents relevant to your current task. Do NOT load all docs at once.
+
+### Decision Tree: What to Read
+
+**Start here:**
+- Understanding overall architecture or starting new work → `ARCHITECTURE_GUIDELINES.md` (navigation hub)
+
+**Creating or modifying a service:**
+- Setting up a new service from scratch → `ADDING-NEW-SERVICES.md` ⚠️
+  - Always follow the full checklist before opening a PR
+
+**TypeScript & Imports:**
+- tsconfig, strict mode, import aliases → `TYPESCRIPT-CONFIG.md`
+  - Critical: all imports must use `@service-name/*`, never relative paths
+
+**Code Quality:**
+- ESLint (flat config), Prettier, Husky, CI pipeline → `CODE-QUALITY.md`
+  - ESLint 9+ requires `eslint.config.js`, not `.eslintrc.js`
+
+**Service Communication & Boundaries:**
+- Inter-service HTTP, databases, env vars → `SERVICE-BOUNDARIES.md`
+  - One database per service — no cross-database queries
+
+**Builds & Workflow:**
+- Turborepo, builds, caching, CI → `DEVELOPMENT-WORKFLOW.md`
+
+**Project Structure:**
+- Folder layout, naming conventions → `MONOREPO-STRUCTURE.md`
+
+**Package Management:**
+- pnpm commands, workspace protocol → `PACKAGE-MANAGER.md`
+
+### Quick Reference by Task Type
+
+| Task | Primary Doc | Secondary Doc |
+|---|---|---|
+| New service | ADDING-NEW-SERVICES.md | TYPESCRIPT-CONFIG.md |
+| TypeScript / imports | TYPESCRIPT-CONFIG.md | ADDING-NEW-SERVICES.md |
+| ESLint / Prettier / CI | CODE-QUALITY.md | DEVELOPMENT-WORKFLOW.md |
+| Inter-service communication | SERVICE-BOUNDARIES.md | ARCHITECTURE_GUIDELINES.md |
+| Turborepo / builds | DEVELOPMENT-WORKFLOW.md | PACKAGE-MANAGER.md |
+| Folder structure / naming | MONOREPO-STRUCTURE.md | ARCHITECTURE_GUIDELINES.md |
+| pnpm / dependencies | PACKAGE-MANAGER.md | MONOREPO-STRUCTURE.md |
