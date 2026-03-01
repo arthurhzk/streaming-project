@@ -10,7 +10,8 @@
     "format": "prettier --write src",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "prisma:generate": "prisma generate"
+    "prisma:generate": "prisma generate",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@repo/env-config": "workspace:*",
