@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import CircuitBreaker from 'opossum';
 import { createLogger } from '@repo/logger';
+import env from '@api-gateway/config/env';
 
 const logger = createLogger('api-gateway');
 
@@ -19,7 +20,7 @@ export class CircuitBreakerService {
     if (this.breakers.has(config.name)) return;
 
     const breaker = new CircuitBreaker(async (fn: () => Promise<unknown>) => fn(), {
-      timeout: 5000,
+      timeout: env.REQUEST_TIMEOUT_MS,
       errorThresholdPercentage: 50,
       resetTimeout: 30000,
     });

@@ -14,7 +14,7 @@ const SERVICE_URL_MAP: Record<string, () => string> = {
   user: () => env.USER_SERVICE_URL,
 };
 
-const SKIPPED_REQUEST_HEADERS = new Set(['authorization', 'host']);
+const SKIPPED_REQUEST_HEADERS = new Set(['authorization', 'host', 'content-length']);
 const SKIPPED_RESPONSE_HEADERS = new Set(['transfer-encoding']);
 
 type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 'OPTIONS';
