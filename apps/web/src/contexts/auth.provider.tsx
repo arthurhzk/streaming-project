@@ -1,22 +1,6 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
-} from 'react';
+import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { api, clearAccessToken, getRefreshToken } from '@web/lib/api';
-
-interface AuthContextValue {
-  isAuthenticated: boolean;
-  userId: string | null;
-  setAuthenticated: (userId: string) => void;
-  logout: () => void;
-}
-
-const AuthContext = createContext<AuthContextValue | null>(null);
+import { AuthContext, type AuthContextValue } from '@web/contexts/auth.context';
 
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [userId, setUserId] = useState<string | null>(null);
@@ -32,8 +16,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const token = getRefreshToken();
     try {
       await api.post('/auth/logout', { refreshToken: token ?? '' });
-    } catch {
-      // Ignore logout errors
     } finally {
       clearAccessToken();
       setUserId(null);
@@ -86,12 +68,4 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
-}
-
-export function useAuth(): AuthContextValue {
-  const ctx = useContext(AuthContext);
-  if (!ctx) {
-    throw new Error('useAuth must be used within AuthProvider');
-  }
-  return ctx;
 }

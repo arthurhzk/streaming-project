@@ -1,6 +1,6 @@
 import { QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from 'sonner';
-import { AuthProvider } from '@web/contexts/auth.context';
+import { AuthProvider } from '@web/contexts/auth.provider';
 import { queryClient } from '@web/lib/query-client';
 import { Router } from '@web/router';
 

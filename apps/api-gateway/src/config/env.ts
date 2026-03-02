@@ -3,6 +3,7 @@ import { z } from 'zod';
 
 export default createEnv({
   PORT: z.coerce.number().default(3000),
+  CORS_ORIGIN: z.string().url().default('http://localhost:5173'),
   JWT_SECRET: z.string().min(1),
   AUTH_SERVICE_URL: z.string().url(),
   USER_SERVICE_URL: z.string().url(),

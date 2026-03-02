@@ -2,7 +2,7 @@ import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 import { api } from '@web/lib/api';
-import { useAuth } from '@web/contexts/auth.context';
+import { useAuth } from '@web/contexts/use-auth';
 import type { LoginFormValues } from '@web/schemas/login.schema';
 import type { RegisterFormValues } from '@web/schemas/register.schema';
 

@@ -30,9 +30,10 @@ async function bootstrap() {
     }),
   );
   app.enableCors({
-    origin: '*',
+    origin: env.CORS_ORIGIN,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
   });
   app.useGlobalFilters(new ThrottlerExceptionFilter());
   await app.listen(env.PORT);
