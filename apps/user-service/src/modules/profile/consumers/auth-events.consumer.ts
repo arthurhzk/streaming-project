@@ -5,7 +5,7 @@ import { EVENTS_EXCHANGE, QUEUES, ROUTING_KEYS } from '@user-service/events/even
 import { createLogger } from '@repo/logger';
 
 interface UserCreatedPayload {
-  userId: string;
+  id: string;
   email: string;
   firstName?: string;
   lastName?: string;
@@ -32,24 +32,28 @@ export class AuthEventsConsumer implements OnModuleInit {
   private async handleUserCreated(message: unknown): Promise<void> {
     const payload = message as UserCreatedPayload;
 
-    if (!payload.userId || !payload.email) {
+    if (!payload.id || !payload.email) {
       logger.warn({ reason: 'Invalid payload' }, 'Skipping user.created event');
       return;
     }
 
-    const existing = await this.profileRepository.findByUserId(payload.userId);
+    const existing = await this.profileRepository.findByUserId(payload.id);
     if (existing) {
-      logger.info({ userId: payload.userId }, 'Profile already exists, skipping');
+      logger.info({ userId: payload.id }, 'Profile already exists, skipping');
       return;
     }
 
-    await this.profileRepository.create({
-      userId: payload.userId,
-      email: payload.email,
-      firstName: payload.firstName,
-      lastName: payload.lastName,
-    });
+    await this.profileRepository
+      .create({
+        userId: payload.id,
+        email: payload.email,
+        firstName: payload.firstName,
+        lastName: payload.lastName,
+      })
+      .catch((err) => {
+        logger.error({ err }, 'Error creating profile from user.created event');
+      });
 
-    logger.info({ userId: payload.userId }, 'Profile created from user.created event');
+    logger.info({ userId: payload.id }, 'Profile created from user.created event');
   }
 }
