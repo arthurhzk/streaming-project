@@ -14,5 +14,9 @@ export class CircuitBreakerModule implements OnModuleInit {
       name: 'auth',
       url: env.AUTH_SERVICE_URL,
     });
+    this.circuitBreaker.register({
+      name: 'user',
+      url: env.USER_SERVICE_URL,
+    });
   }
 }
