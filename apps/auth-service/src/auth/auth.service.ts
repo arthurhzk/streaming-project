@@ -2,9 +2,11 @@ import { ConflictException, Injectable, UnauthorizedException } from '@nestjs/co
 import * as bcrypt from 'bcrypt';
 import { PrismaService } from '@auth-service/prisma/prisma.service';
 import { TokenService } from '@auth-service/auth/token.service';
+import { RabbitmqService } from '@auth-service/events/rabbitmq/rabbitmq.service';
 import type { RegisterDto } from '@auth-service/auth/dtos/register.dto';
 import type { LoginDto } from '@auth-service/auth/dtos/login.dto';
 import { createLogger } from '@repo/logger';
+import { EVENTS_EXCHANGE, ROUTING_KEYS } from '@auth-service/events/events.constants';
 
 const SALT_ROUNDS = 12;
 const logger = createLogger('auth-service');
@@ -19,6 +21,7 @@ export class AuthService {
   constructor(
     private readonly prisma: PrismaService,
     private readonly tokenService: TokenService,
+    private readonly rabbitmq: RabbitmqService,
   ) {}
 
   async register(dto: RegisterDto): Promise<AuthTokens> {
@@ -39,7 +42,12 @@ export class AuthService {
       },
     });
 
+    await this.rabbitmq.publishMessage(EVENTS_EXCHANGE, ROUTING_KEYS.USER_CREATED, user);
+
+    await this.rabbitmq.publishMessage(EVENTS_EXCHANGE, ROUTING_KEYS.SEND_WELCOME_EMAIL, user);
+
     logger.info({ userId: user.id }, 'User registered');
+
     return this.tokenService.generateTokenPair(user.id);
   }
 
