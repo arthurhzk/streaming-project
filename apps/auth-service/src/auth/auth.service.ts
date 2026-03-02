@@ -1,4 +1,9 @@
-import { ConflictException, Injectable, UnauthorizedException } from '@nestjs/common';
+import {
+  ConflictException,
+  Injectable,
+  NotFoundException,
+  UnauthorizedException,
+} from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { PrismaService } from '@auth-service/prisma/prisma.service';
 import { TokenService } from '@auth-service/auth/token.service';
@@ -81,6 +86,21 @@ export class AuthService {
       accessToken,
       refreshToken: result.refreshToken,
     };
+  }
+
+  async forgotPassword(email: string): Promise<void> {
+    const user = await this.prisma.user.findUnique({
+      where: { email },
+    });
+
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+    await this.rabbitmq.publishMessage(EVENTS_EXCHANGES, ROUTING_KEYS.FORGOT_PASSWORD, {
+      ...user,
+      template: 'forgotPassword',
+    });
+    logger.info({ userId: user.id }, 'Forgot password email sent');
   }
 
   async logout(refreshToken: string): Promise<void> {
