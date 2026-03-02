@@ -47,7 +47,11 @@ export class AuthService {
       },
     });
 
-    await this.rabbitmq.publishMessage(EVENTS_EXCHANGES, ROUTING_KEYS.USER_CREATED, user);
+    await this.rabbitmq.publishMessage(EVENTS_EXCHANGES, ROUTING_KEYS.USER_CREATED, {
+      ...user,
+      firstName: dto.firstName,
+      lastName: dto.lastName,
+    });
 
     await this.rabbitmq.publishMessage(EVENTS_EXCHANGES, ROUTING_KEYS.WELCOME_EMAIL, {
       ...user,
