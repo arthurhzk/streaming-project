@@ -7,4 +7,5 @@ export default createEnv({
   SMTP_PORT: z.coerce.number().optional(),
   SMTP_USER: z.string().optional(),
   SMTP_PASS: z.string().optional(),
+  RABBITMQ_URL: z.string().url(),
 });
