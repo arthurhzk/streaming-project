@@ -7,12 +7,13 @@ import {
   ROUTING_KEYS,
 } from '@notification-service/events/events.constants';
 import { createLogger } from '@repo/logger';
+import env from '@notification-service/config/env';
+import fs from 'fs';
+import path from 'path';
 
 interface EmailEventPayload {
-  to: string;
+  email: string;
   subject: string;
-  text: string;
-  context: Record<string, unknown>;
   template: string;
   from: string;
 }
@@ -38,15 +39,16 @@ export class EmailEventsConsumer implements OnModuleInit {
   private async sendMail(message: unknown): Promise<void> {
     try {
       const payload = message as EmailEventPayload;
-      await this.emailService.sendMail(
-        payload.from,
-        payload.to,
-        payload.subject,
-        payload.text,
-        payload.context,
-        payload.template,
+      const template = fs.readFileSync(
+        path.join(__dirname, '..', 'email', 'templates', payload.template, 'html.ejs'),
+        'utf8',
       );
-      logger.info({ to: payload.to, subject: payload.subject }, 'Email sent successfully');
+      const subject = fs.readFileSync(
+        path.join(__dirname, '..', 'email', 'templates', payload.template, 'subject.ejs'),
+        'utf8',
+      );
+      await this.emailService.sendMail(env.SMTP_USER as string, payload.email, subject, template);
+      logger.info({ to: payload.email, subject: payload.subject }, 'Email sent successfully');
     } catch (error) {
       logger.error({ err: error, message }, 'Failed to send email');
       throw error;
