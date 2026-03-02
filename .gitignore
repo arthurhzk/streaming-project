@@ -32,3 +32,9 @@ Thumbs.db
 .vscode
 *.swp
 *.swo
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars.json
