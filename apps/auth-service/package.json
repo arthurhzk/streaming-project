@@ -21,6 +21,7 @@
     "@nestjs/platform-express": "^11.0.0",
     "@prisma/adapter-pg": "^7.4.2",
     "@prisma/client": "^7.4.2",
+    "@repo/amqplib": "workspace:^",
     "@repo/env-config": "workspace:*",
     "@repo/logger": "workspace:*",
     "bcrypt": "^6.0.0",

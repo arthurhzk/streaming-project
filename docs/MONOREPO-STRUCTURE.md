@@ -94,6 +94,8 @@ packages/
 | `tsconfig`        | Shared TypeScript configurations (`base.json`, `node.json`) |
 | `vitest-config`   | Centralized Vitest test setup and coverage config           |
 | `shared-utils`    | Reusable utilities shared across services                   |
+| `rabbitmq`        | NestJS RabbitMQ module for async messaging                  |
+| `amqplib`         | Thin wrapper re-exporting amqplib; centralizes dependency   |
 
 ### Adding New Shared Packages
 

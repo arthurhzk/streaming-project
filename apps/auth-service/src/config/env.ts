@@ -7,4 +7,5 @@ export default createEnv({
   JWT_SECRET: z.string().min(1),
   JWT_EXPIRES_IN: z.string().default('15m'),
   REFRESH_TOKEN_EXPIRES_IN: z.string().default('7d'),
+  RABBITMQ_URL: z.string().url(),
 });

@@ -49,7 +49,8 @@ This monorepo follows a **Turborepo** architecture pattern, enabling efficient d
 **IF** running builds or understanding Turborepo → read [DEVELOPMENT-WORKFLOW.md](./DEVELOPMENT-WORKFLOW.md)  
 **IF** understanding folder structure or naming → read [MONOREPO-STRUCTURE.md](./MONOREPO-STRUCTURE.md)  
 **IF** managing dependencies or pnpm commands → read [PACKAGE-MANAGER.md](./PACKAGE-MANAGER.md)  
-**IF** working with databases or Prisma → read [PRISMA-CONFIG.md](./PRISMA-CONFIG.md)
+**IF** working with databases or Prisma → read [PRISMA-CONFIG.md](./PRISMA-CONFIG.md)  
+**IF** a service needs async messaging → read [packages/rabbitmq/README.md](../packages/rabbitmq/README.md)
 
 ---
 
