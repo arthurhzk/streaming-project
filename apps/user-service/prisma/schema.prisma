@@ -1,0 +1,40 @@
+generator client {
+  provider               = "prisma-client"
+  output                 = "../src/generated/prisma"
+  moduleFormat           = "cjs"
+  generatedFileExtension = "ts"
+  importFileExtension    = "ts"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id        String        @id @default(auto()) @map("_id") @db.ObjectId
+  userId    String        @unique
+  email     String        @unique
+  firstName String?
+  lastName  String?
+  avatarKey String?
+  bio       String?
+  plan      Plan          @default(FREE)
+  status    ProfileStatus @default(ACTIVE)
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
+
+  @@map("profiles")
+}
+
+enum Plan {
+  FREE
+  BASIC
+  PREMIUM
+}
+
+enum ProfileStatus {
+  ACTIVE
+  SUSPENDED
+  DELETED
+}

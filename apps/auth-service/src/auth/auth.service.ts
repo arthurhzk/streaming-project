@@ -36,8 +36,6 @@ export class AuthService {
       data: {
         email: dto.email.toLowerCase(),
         password: hashedPassword,
-        firstName: dto.firstName,
-        lastName: dto.lastName,
       },
     });
 
