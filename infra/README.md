@@ -33,6 +33,19 @@ terraform plan -var-file=dev.tfvars
 terraform apply -var-file=dev.tfvars
 ```
 
+**Region mismatch?** If your AWS credentials default to another region (e.g. `ap-southeast-2`) but you want resources in `us-east-1`, run:
+
+```bash
+AWS_DEFAULT_REGION=us-east-1 terraform apply -var-file=dev.tfvars
+```
+
+Or use the helper script:
+
+```bash
+./apply.sh plan -var-file=dev.tfvars
+./apply.sh apply -var-file=dev.tfvars
+```
+
 ### Add a new environment (e.g. staging)
 
 1. Copy `environments/dev` to `environments/staging`

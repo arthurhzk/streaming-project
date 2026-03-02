@@ -27,12 +27,6 @@ resource "aws_dynamodb_table" "videos" {
     name = "createdAt"
     type = "S"
   }
-
-  attribute {
-    name = "s3_path"
-    type = "S"
-  }
-
   global_secondary_index {
     name            = "ownerId-createdAt-index"
     hash_key        = "ownerId"

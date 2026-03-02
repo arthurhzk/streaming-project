@@ -27,6 +27,7 @@ module "iam" {
   project_name       = var.project_name
   environment        = var.environment
   dynamodb_table_arn = module.dynamodb.table_arn
+  s3_bucket_arn      = module.s3.bucket_arn
 }
 
 module "s3" {

@@ -96,6 +96,7 @@ packages/
 | `shared-utils`    | Reusable utilities shared across services                   |
 | `rabbitmq`        | NestJS RabbitMQ module for async messaging                  |
 | `amqplib`         | Thin wrapper re-exporting amqplib; centralizes dependency   |
+| `aws-sdk`         | DynamoDB and S3 client factories; centralizes AWS SDK v3    |
 
 ### Adding New Shared Packages
 
