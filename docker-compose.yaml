@@ -35,24 +35,5 @@ services:
       timeout: 5s
       retries: 5
 
-  mongodb-user:
-    image: mongo:7-jammy
-    container_name: mongodb-user
-    restart: unless-stopped
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: user_admin
-      MONGO_INITDB_ROOT_PASSWORD: user_password
-      MONGO_INITDB_DATABASE: user_db
-    ports:
-      - '27017:27017'
-    volumes:
-      - mongodb_user_data:/data/db
-    healthcheck:
-      test: ['CMD', 'mongosh', '--eval', "db.adminCommand('ping')"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
 volumes:
   postgres_auth_data:
-  mongodb_user_data:

@@ -12,6 +12,7 @@ const logger = createLogger('api-gateway');
 const SERVICE_URL_MAP: Record<string, () => string> = {
   auth: () => env.AUTH_SERVICE_URL,
   user: () => env.USER_SERVICE_URL,
+  notification: () => env.NOTIFICATION_SERVICE_URL,
 };
 
 const SKIPPED_REQUEST_HEADERS = new Set(['authorization', 'host', 'content-length']);

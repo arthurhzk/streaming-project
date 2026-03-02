@@ -18,5 +18,9 @@ export class CircuitBreakerModule implements OnModuleInit {
       name: 'user',
       url: env.USER_SERVICE_URL,
     });
+    this.circuitBreaker.register({
+      name: 'notification',
+      url: env.NOTIFICATION_SERVICE_URL,
+    });
   }
 }
