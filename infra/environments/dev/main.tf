@@ -1,16 +1,13 @@
+data "aws_caller_identity" "current" {}
+
 locals {
   common_tags = {
     Environment = var.environment
     Project     = var.project_name
     ManagedBy   = "terraform"
   }
-}
-
-module "storage" {
-  source = "../../modules/storage"
-
-  bucket_name = var.bucket_name
-  tags        = local.common_tags
+  # S3 bucket names must be globally unique - include account ID
+  bucket_name = "${var.project_name}-videos-${var.environment}-${data.aws_caller_identity.current.account_id}"
 }
 
 module "dynamodb" {
@@ -33,6 +30,6 @@ module "iam" {
 module "s3" {
   source = "../../modules/s3"
 
-  bucket_name = var.bucket_name
+  bucket_name = local.bucket_name
   tags        = local.common_tags
 }

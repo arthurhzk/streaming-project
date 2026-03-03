@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
+import { HealthModule } from '@video-service/health/health.module';
 import { VideosModule } from '@video-service/videos/videos.module';
 
 @Module({
-  imports: [VideosModule],
+  imports: [HealthModule, VideosModule],
   controllers: [],
   providers: [],
 })

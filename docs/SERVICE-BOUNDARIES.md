@@ -40,7 +40,7 @@ For runtime communication between services, use HTTP. Service URLs must always b
 // config/services.ts
 export const SERVICE_URLS = {
   auth: process.env.AUTH_SERVICE_URL ?? 'http://localhost:3001',
-  user: process.env.USER_SERVICE_URL ?? 'http://localhost:3002',
+  user: process.env.USER_SERVICE_URL ?? 'http://localhost:3005',
 } as const;
 
 // Calling another service

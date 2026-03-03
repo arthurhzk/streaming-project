@@ -6,7 +6,7 @@ export { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 export { DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
 export { S3Client } from '@aws-sdk/client-s3';
 
-const DEFAULT_REGION = 'us-east-1';
+const DEFAULT_REGION = 'ap-southeast-2';
 
 export function createDynamoDBClient(
   config?: Partial<DynamoDBClientConfig>,

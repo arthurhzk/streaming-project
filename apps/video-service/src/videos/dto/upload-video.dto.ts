@@ -1,4 +1,5 @@
-import { IsOptional, IsString } from 'class-validator';
+import { IsNumber, IsOptional, IsString } from 'class-validator';
+import { Type } from 'class-transformer';
 
 export class UploadVideoDto {
   @IsString()
@@ -11,4 +12,9 @@ export class UploadVideoDto {
   @IsOptional()
   @IsString()
   category?: string;
+
+  @IsOptional()
+  @IsNumber()
+  @Type(() => Number)
+  duration?: number;
 }

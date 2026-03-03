@@ -3,6 +3,7 @@ import { useAuth } from '@web/contexts/use-auth';
 import { LoginPage } from '@web/pages/login';
 import { RegisterPage } from '@web/pages/register';
 import { DashboardPage } from '@web/pages/dashboard';
+import { UploadPage } from '@web/pages/UploadPage';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuth();
@@ -51,6 +52,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedRoute>
         <DashboardPage />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: '/upload',
+    element: (
+      <ProtectedRoute>
+        <UploadPage />
       </ProtectedRoute>
     ),
   },

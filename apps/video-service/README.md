@@ -13,18 +13,18 @@ NestJS service that handles video uploads to S3 and stores/retrieves video metad
 pnpm dev
 ```
 
-Default port: 3002
+Default port: 3006
 
 ## Environment Variables
 
-| Variable                | Description                       |
-| ----------------------- | --------------------------------- |
-| `PORT`                  | Server port (default: 3002)       |
-| `AWS_REGION`            | AWS region (default: us-east-1)   |
-| `AWS_ACCESS_KEY_ID`     | AWS access key                    |
-| `AWS_SECRET_ACCESS_KEY` | AWS secret key                    |
-| `S3_BUCKET_NAME`        | S3 bucket for video storage       |
-| `DYNAMODB_TABLE_NAME`   | DynamoDB table for video metadata |
+| Variable                | Description                          |
+| ----------------------- | ------------------------------------ |
+| `PORT`                  | Server port (default: 3006)          |
+| `AWS_REGION`            | AWS region (default: ap-southeast-2) |
+| `AWS_ACCESS_KEY_ID`     | AWS access key                       |
+| `AWS_SECRET_ACCESS_KEY` | AWS secret key                       |
+| `S3_BUCKET_NAME`        | S3 bucket for video storage          |
+| `DYNAMODB_TABLE_NAME`   | DynamoDB table for video metadata    |
 
 ## API Endpoints
 

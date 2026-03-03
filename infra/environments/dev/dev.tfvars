@@ -1,4 +1,3 @@
-aws_region   = "us-east-1"
-bucket_name  = "streaming-project-bucket"
+aws_region   = "ap-southeast-2"
 environment  = "development"
 project_name = "streaming-project"

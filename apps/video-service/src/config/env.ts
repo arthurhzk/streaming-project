@@ -2,8 +2,8 @@ import { createEnv } from '@repo/env-config';
 import { z } from 'zod';
 
 export default createEnv({
-  PORT: z.coerce.number().default(3002),
-  AWS_REGION: z.string().default('us-east-1'),
+  PORT: z.coerce.number().default(3006),
+  AWS_REGION: z.string().default('ap-southeast-2'),
   AWS_ACCESS_KEY_ID: z.string(),
   AWS_SECRET_ACCESS_KEY: z.string(),
   S3_BUCKET_NAME: z.string(),

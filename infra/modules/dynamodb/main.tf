@@ -1,3 +1,6 @@
+# Videos table item schema (non-key attributes are schema-less; stored at runtime):
+# - id (S, PK), ownerId (S), slug (S), category (S), createdAt (S)
+# - s3Key (S), filename (S), size (N), duration (N, optional seconds)
 resource "aws_dynamodb_table" "videos" {
   name         = "${var.project_name}-videos-${var.environment}"
   billing_mode = "PAY_PER_REQUEST"

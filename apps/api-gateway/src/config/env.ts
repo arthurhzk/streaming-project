@@ -7,6 +7,7 @@ export default createEnv({
   JWT_SECRET: z.string().min(1),
   AUTH_SERVICE_URL: z.string().url(),
   USER_SERVICE_URL: z.string().url(),
+  VIDEO_SERVICE_URL: z.string().url().default('http://localhost:3006'),
   NOTIFICATION_SERVICE_URL: z.string().url(),
   REQUEST_TIMEOUT_MS: z.coerce.number().default(10000),
   RATE_LIMIT_TTL: z.coerce.number().default(60),

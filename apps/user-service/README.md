@@ -12,7 +12,7 @@ pnpm dev
 
 | Variable     | Description                                                                                                                                                                                                     | Default  |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| PORT         | HTTP server port                                                                                                                                                                                                | 3002     |
+| PORT         | HTTP server port                                                                                                                                                                                                | 3005     |
 | DATABASE_URL | MongoDB connection string (must include `replicaSet=rs0` and `authSource=admin` for Prisma transactions). Example: `mongodb://user_admin:user_password@localhost:27017/user_db?authSource=admin&replicaSet=rs0` | required |
 | RABBITMQ_URL | RabbitMQ connection string                                                                                                                                                                                      | required |
 

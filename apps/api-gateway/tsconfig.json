@@ -3,9 +3,10 @@
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./src",
+    "baseUrl": ".",
+    "skipLibCheck": true,
     "paths": {
-      "@api-gateway/*": ["./*"]
+      "@api-gateway/*": ["./src/*"]
     },
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true

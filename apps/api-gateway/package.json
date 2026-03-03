@@ -23,6 +23,7 @@
     "@repo/env-config": "workspace:*",
     "@repo/logger": "workspace:*",
     "axios": "^1.7.9",
+    "express": "^4.21.0",
     "helmet": "^8.1.0",
     "opossum": "^8.1.2",
     "passport": "^0.7.0",

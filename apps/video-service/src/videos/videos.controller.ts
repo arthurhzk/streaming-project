@@ -22,7 +22,7 @@ export class VideosController {
     if (!file) {
       throw new BadRequestException('File is required');
     }
-    return this.videosService.upload(file, dto.ownerId, dto.slug, dto.category);
+    return this.videosService.upload(file, dto.ownerId, dto.slug, dto.category, dto.duration);
   }
 
   @Get(':id')

@@ -13,9 +13,10 @@ const SERVICE_URL_MAP: Record<string, () => string> = {
   auth: () => env.AUTH_SERVICE_URL,
   user: () => env.USER_SERVICE_URL,
   notification: () => env.NOTIFICATION_SERVICE_URL,
+  videos: () => env.VIDEO_SERVICE_URL,
 };
 
-const SKIPPED_REQUEST_HEADERS = new Set(['authorization', 'host', 'content-length']);
+const SKIPPED_REQUEST_HEADERS = new Set(['authorization', 'host']);
 const SKIPPED_RESPONSE_HEADERS = new Set(['transfer-encoding']);
 
 type HttpMethod = 'GET' | 'POST' | 'PUT' | 'PATCH' | 'DELETE' | 'HEAD' | 'OPTIONS';
@@ -44,9 +45,14 @@ export class ProxyService {
     requestHeaders['x-correlation-id'] = correlationId ?? '';
     requestHeaders['x-forwarded-for'] = forwardedFor;
 
+    const isMultipart =
+      typeof req.headers['content-type'] === 'string' &&
+      req.headers['content-type'].toLowerCase().includes('multipart/form-data');
+    const body = isMultipart ? req : req.body;
+
     try {
       return await this.circuitBreaker.execute(serviceName, () =>
-        this.makeRequest(req.method as HttpMethod, targetUrl, requestHeaders, req.body),
+        this.makeRequest(req.method as HttpMethod, targetUrl, requestHeaders, body),
       );
     } catch (err) {
       if (this.circuitBreaker.getState(serviceName) === 'open') {

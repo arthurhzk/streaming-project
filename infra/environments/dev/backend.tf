@@ -5,7 +5,7 @@
 #   backend "s3" {
 #     bucket         = "your-terraform-state-bucket"
 #     key            = "streaming-project/dev/terraform.tfstate"
-#     region         = "us-east-1"
+#     region         = "ap-southeast-2"
 #     dynamodb_table = "terraform-state-lock"
 #   }
 # }

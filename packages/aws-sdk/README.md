@@ -18,9 +18,9 @@ Then run `pnpm install`.
 
 ## Environment Variables
 
-| Variable     | Description                  | Default     |
-| ------------ | ---------------------------- | ----------- |
-| `AWS_REGION` | AWS region for client config | `us-east-1` |
+| Variable     | Description                  | Default          |
+| ------------ | ---------------------------- | ---------------- |
+| `AWS_REGION` | AWS region for client config | `ap-southeast-2` |
 
 Credentials use the default chain (env vars, IAM role, `~/.aws/credentials`).
 
