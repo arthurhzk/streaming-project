@@ -26,6 +26,7 @@ pnpm dev
 | `JWT_SECRET`         | Yes      | -       | Secret for validating JWTs (same as auth-service)           |
 | `AUTH_SERVICE_URL`   | Yes      | -       | Base URL of the auth service (e.g. `http://localhost:3001`) |
 | `REQUEST_TIMEOUT_MS` | No       | 10000   | Timeout for proxy requests in milliseconds                  |
+| `UPLOAD_TIMEOUT_MS`  | No       | 300000  | Timeout for multipart uploads (e.g. video) in milliseconds  |
 | `RATE_LIMIT_TTL`     | No       | 60      | Rate limit window in seconds                                |
 | `RATE_LIMIT_MAX`     | No       | 100     | Max requests per IP per window                              |
 

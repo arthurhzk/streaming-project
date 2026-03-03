@@ -10,6 +10,7 @@ export default createEnv({
   VIDEO_SERVICE_URL: z.string().url().default('http://localhost:3006'),
   NOTIFICATION_SERVICE_URL: z.string().url(),
   REQUEST_TIMEOUT_MS: z.coerce.number().default(10000),
+  UPLOAD_TIMEOUT_MS: z.coerce.number().default(300000), // 5 min for video uploads
   RATE_LIMIT_TTL: z.coerce.number().default(60),
   RATE_LIMIT_MAX: z.coerce.number().default(100),
 });

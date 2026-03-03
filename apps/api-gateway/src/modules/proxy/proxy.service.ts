@@ -49,10 +49,22 @@ export class ProxyService {
       typeof req.headers['content-type'] === 'string' &&
       req.headers['content-type'].toLowerCase().includes('multipart/form-data');
     const body = isMultipart ? req : req.body;
+    const timeoutMs = isMultipart ? env.UPLOAD_TIMEOUT_MS : env.REQUEST_TIMEOUT_MS;
 
+    // Multipart uploads bypass circuit breaker: they need a long timeout and must not
+    // trip the breaker when large files take time. Circuit breaker uses 10s default.
     try {
+      if (isMultipart) {
+        return await this.makeRequest(
+          req.method as HttpMethod,
+          targetUrl,
+          requestHeaders,
+          body,
+          timeoutMs,
+        );
+      }
       return await this.circuitBreaker.execute(serviceName, () =>
-        this.makeRequest(req.method as HttpMethod, targetUrl, requestHeaders, body),
+        this.makeRequest(req.method as HttpMethod, targetUrl, requestHeaders, body, timeoutMs),
       );
     } catch (err) {
       if (this.circuitBreaker.getState(serviceName) === 'open') {
@@ -71,6 +83,7 @@ export class ProxyService {
     url: string,
     headers: Record<string, string>,
     body: unknown,
+    timeoutMs = env.REQUEST_TIMEOUT_MS,
   ) {
     const res = await firstValueFrom(
       this.httpService.request({
@@ -78,7 +91,7 @@ export class ProxyService {
         url,
         headers,
         data: method !== 'GET' && method !== 'HEAD' ? body : undefined,
-        timeout: env.REQUEST_TIMEOUT_MS,
+        timeout: timeoutMs,
         validateStatus: () => true,
       }),
     );
