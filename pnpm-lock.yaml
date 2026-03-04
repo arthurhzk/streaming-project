@@ -21,34 +21,34 @@ importers:
         version: 3.8.1
       turbo:
         specifier: ^2.3.3
-        version: 2.8.12
+        version: 2.8.13
 
   apps/api-gateway:
     dependencies:
       '@nestjs/axios':
         specifier: ^3.0.2
-        version: 3.1.3(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)
+        version: 3.1.3(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.0.0
-        version: 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/jwt':
         specifier: ^11.0.2
-        version: 11.0.2(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))
+        version: 11.0.2(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))
       '@nestjs/passport':
         specifier: ^11.0.5
-        version: 11.0.5(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(passport@0.7.0)
+        version: 11.0.5(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(passport@0.7.0)
       '@nestjs/platform-express':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
       '@nestjs/terminus':
         specifier: ^11.0.0
-        version: 11.1.1(@nestjs/axios@3.1.3(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2))(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(@nestjs/microservices@11.1.14)(@prisma/client@7.4.2(prisma@7.4.2(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3))(typescript@5.9.3))(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.1(@nestjs/axios@3.1.3(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(@nestjs/microservices@11.1.15)(@prisma/client@7.4.2(prisma@7.4.2(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3))(typescript@5.9.3))(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/throttler':
         specifier: ^6.0.0
-        version: 6.5.0(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(reflect-metadata@0.2.2)
+        version: 6.5.0(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(reflect-metadata@0.2.2)
       '@repo/env-config':
         specifier: workspace:*
         version: link:../../packages/env-config
@@ -127,22 +127,22 @@ importers:
     dependencies:
       '@nestjs/common':
         specifier: ^11.0.0
-        version: 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/jwt':
         specifier: ^11.0.2
-        version: 11.0.2(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))
+        version: 11.0.2(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))
       '@nestjs/microservices':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/passport':
         specifier: ^11.0.5
-        version: 11.0.5(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(passport@0.7.0)
+        version: 11.0.5(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(passport@0.7.0)
       '@nestjs/platform-express':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
       '@prisma/adapter-pg':
         specifier: ^7.4.2
         version: 7.4.2
@@ -230,16 +230,16 @@ importers:
     dependencies:
       '@nestjs-modules/mailer':
         specifier: ^2.0.2
-        version: 2.0.2(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(nodemailer@6.10.1)
+        version: 2.0.2(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(nodemailer@6.10.1)
       '@nestjs/common':
         specifier: ^11.0.0
-        version: 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
       '@repo/amqplib':
         specifier: workspace:^
         version: link:../../packages/amqplib
@@ -312,22 +312,22 @@ importers:
     dependencies:
       '@aws-sdk/client-s3':
         specifier: ^3.700.0
-        version: 3.1000.0
+        version: 3.1001.0
       '@aws-sdk/s3-request-presigner':
         specifier: ^3.700.0
         version: 3.1001.0
       '@nestjs/axios':
         specifier: ^3.0.0
-        version: 3.1.3(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)
+        version: 3.1.3(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)
       '@nestjs/common':
         specifier: ^11.0.0
-        version: 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
       '@repo/aws-sdk':
         specifier: workspace:*
         version: link:../../packages/aws-sdk
@@ -382,13 +382,13 @@ importers:
     dependencies:
       '@nestjs/common':
         specifier: ^11.0.0
-        version: 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
       '@prisma/client':
         specifier: ^6.19.0
         version: 6.19.2(prisma@6.19.2(typescript@5.9.3))(typescript@5.9.3)
@@ -455,19 +455,19 @@ importers:
     dependencies:
       '@aws-sdk/client-s3':
         specifier: ^3.700.0
-        version: 3.1000.0
+        version: 3.1001.0
       '@aws-sdk/lib-dynamodb':
         specifier: ^3.700.0
-        version: 3.1000.0(@aws-sdk/client-dynamodb@3.1000.0)
+        version: 3.1001.0(@aws-sdk/client-dynamodb@3.1001.0)
       '@nestjs/common':
         specifier: ^11.0.0
-        version: 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/platform-express':
         specifier: ^11.0.0
-        version: 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+        version: 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
       '@repo/aws-sdk':
         specifier: workspace:*
         version: link:../../packages/aws-sdk
@@ -647,13 +647,13 @@ importers:
     dependencies:
       '@aws-sdk/client-dynamodb':
         specifier: ^3.700.0
-        version: 3.1000.0
+        version: 3.1001.0
       '@aws-sdk/client-s3':
         specifier: ^3.700.0
-        version: 3.1000.0
+        version: 3.1001.0
       '@aws-sdk/lib-dynamodb':
         specifier: ^3.700.0
-        version: 3.1000.0(@aws-sdk/client-dynamodb@3.1000.0)
+        version: 3.1001.0(@aws-sdk/client-dynamodb@3.1001.0)
     devDependencies:
       '@repo/tsconfig':
         specifier: workspace:*
@@ -738,7 +738,7 @@ importers:
         version: 5.9.3
       vitest:
         specifier: ^2.1.8
-        version: 2.1.9(@types/node@25.3.3)
+        version: 2.1.9(@types/node@24.11.0)
 
 packages:
   '@alloc/quick-lru@5.2.0':
@@ -792,24 +792,17 @@ packages:
         integrity: sha512-4RkU9EsI6ZpBve5fseQlGNUWKMa1RLPQ1dnjnQoe07ldfIzcsGb5hC5W0Dm7u423KWzawlrpbjXBrXCEv9zazQ==,
       }
 
-  '@aws-sdk/client-dynamodb@3.1000.0':
+  '@aws-sdk/client-dynamodb@3.1001.0':
     resolution:
       {
-        integrity: sha512-S0M9ndVgGiupQEX9M6yLIKx2Iw1Z/lnZR1j5guuR76sqteQM6jsQseTJepq0hJ9SGGpzSwMucYJxETQDHsgFhQ==,
+        integrity: sha512-mPmib0VFBnPR3s9Yz+e5HFd2HIbRlLrlnAbD+aEmPKB7Wqm4MOfWp7xMYyxpms+/CdDFnB1dk3vQyD5x6l4abw==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/client-s3@3.1000.0':
+  '@aws-sdk/client-s3@3.1001.0':
     resolution:
       {
-        integrity: sha512-7kPy33qNGq3NfwHC0412T6LDK1bp4+eiPzetX0sVd9cpTSXuQDKpoOFnB0Njj6uZjJDcLS3n2OeyarwwgkQ0Ow==,
-      }
-    engines: { node: '>=20.0.0' }
-
-  '@aws-sdk/core@3.973.15':
-    resolution:
-      {
-        integrity: sha512-AlC0oQ1/mdJ8vCIqu524j5RB7M8i8E24bbkZmya1CuiQxkY7SdIZAyw7NDNMGaNINQFq/8oGRMX0HeOfCVsl/A==,
+        integrity: sha512-uKgFjQuBjMcd0iigLQwnqIp9gOy/5TGBxa42rcb6l5byDt1mrwOe6fyWTEUEJaNHG2LKYSPUibteGvM1zfm0Rw==,
       }
     engines: { node: '>=20.0.0' }
 
@@ -827,66 +820,66 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-env@3.972.13':
+  '@aws-sdk/credential-provider-env@3.972.14':
     resolution:
       {
-        integrity: sha512-6ljXKIQ22WFKyIs1jbORIkGanySBHaPPTOI4OxACP5WXgbcR0nDYfqNJfXEGwCK7IzHdNbCSFsNKKs0qCexR8Q==,
+        integrity: sha512-PvnBY9rwBuLh9MEsAng28DG+WKl+txerKgf4BU9IPAqYI7FBIo1x6q/utLf4KLyQYgSy1TLQnbQuXx5xfBGASg==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-http@3.972.15':
+  '@aws-sdk/credential-provider-http@3.972.16':
     resolution:
       {
-        integrity: sha512-dJuSTreu/T8f24SHDNTjd7eQ4rabr0TzPh2UTCwYexQtzG3nTDKm1e5eIdhiroTMDkPEJeY+WPkA6F9wod/20A==,
+        integrity: sha512-m/QAcvw5OahqGPjeAnKtgfWgjLxeWOYj7JSmxKK6PLyKp2S/t2TAHI6EELEzXnIz28RMgbQLukJkVAqPASVAGQ==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-ini@3.972.13':
+  '@aws-sdk/credential-provider-ini@3.972.14':
     resolution:
       {
-        integrity: sha512-JKSoGb7XeabZLBJptpqoZIFbROUIS65NuQnEHGOpuT9GuuZwag2qciKANiDLFiYk4u8nSrJC9JIOnWKVvPVjeA==,
+        integrity: sha512-EGA7ufqNpZKZcD0RwM6gRDEQgwAf19wQ99R1ptdWYDJAnpcMcWiFyT0RIrgiZFLD28CwJmYjnra75hChnEveWA==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-login@3.972.13':
+  '@aws-sdk/credential-provider-login@3.972.14':
     resolution:
       {
-        integrity: sha512-RtYcrxdnJHKY8MFQGLltCURcjuMjnaQpAxPE6+/QEdDHHItMKZgabRe/KScX737F9vJMQsmJy9EmMOkCnoC1JQ==,
+        integrity: sha512-P2kujQHAoV7irCTv6EGyReKFofkHCjIK+F0ZYf5UxeLeecrCwtrDkHoO2Vjsv/eRUumaKblD8czuk3CLlzwGDw==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-node@3.972.14':
+  '@aws-sdk/credential-provider-node@3.972.15':
     resolution:
       {
-        integrity: sha512-WqoC2aliIjQM/L3oFf6j+op/enT2i9Cc4UTxxMEKrJNECkq4/PlKE5BOjSYFcq6G9mz65EFbXJh7zOU4CvjSKQ==,
+        integrity: sha512-59NBJgTcQ2FC94T+SWkN5UQgViFtrLnkswSKhG5xbjPAotOXnkEF2Bf0bfUV1F3VaXzqAPZJoZ3bpg4rr8XD5Q==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-process@3.972.13':
+  '@aws-sdk/credential-provider-process@3.972.14':
     resolution:
       {
-        integrity: sha512-rsRG0LQA4VR+jnDyuqtXi2CePYSmfm5GNL9KxiW8DSe25YwJSr06W8TdUfONAC+rjsTI+aIH2rBGG5FjMeANrw==,
+        integrity: sha512-KAF5LBkJInUPaR9dJDw8LqmbPDRTLyXyRoWVGcJQ+DcN9rxVKBRzAK+O4dTIvQtQ7xaIDZ2kY7zUmDlz6CCXdw==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-sso@3.972.13':
+  '@aws-sdk/credential-provider-sso@3.972.14':
     resolution:
       {
-        integrity: sha512-fr0UU1wx8kNHDhTQBXioc/YviSW8iXuAxHvnH7eQUtn8F8o/FU3uu6EUMvAQgyvn7Ne5QFnC0Cj0BFlwCk+RFw==,
+        integrity: sha512-LQzIYrNABnZzkyuIguFa3VVOox9UxPpRW6PL+QYtRHaGl1Ux/+Zi54tAVK31VdeBKPKU3cxqeu8dbOgNqy+naw==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/credential-provider-web-identity@3.972.13':
+  '@aws-sdk/credential-provider-web-identity@3.972.14':
     resolution:
       {
-        integrity: sha512-a6iFMh1pgUH0TdcouBppLJUfPM7Yd3R9S1xFodPtCRoLqCz2RQFA3qjA8x4112PVYXEd4/pHX2eihapq39w0rA==,
+        integrity: sha512-rOwB3vXHHHnGvAOjTgQETxVAsWjgF61XlbGd/ulvYo7EpdXs8cbIHE3PGih9tTj/65ZOegSqZGFqLaKntaI9Kw==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/dynamodb-codec@3.972.16':
+  '@aws-sdk/dynamodb-codec@3.972.17':
     resolution:
       {
-        integrity: sha512-SLo648PIVMsKjUUId2v1ig+M6Wqk3tyOtC4vIu3RiM5jyoUYBilrV+p/IVZvHdbLFHNrIWUxtqKr623sTilsGQ==,
+        integrity: sha512-Q2sff1qeHbFSsmRXAhzCl6KM1FVUPvk4njNWvGkBcbbLwTc+i3AxErv1SWhE1SQP0ETMPbcJOEDgc+Ycw1htQg==,
       }
     engines: { node: '>=20.0.0' }
 
@@ -897,14 +890,14 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/lib-dynamodb@3.1000.0':
+  '@aws-sdk/lib-dynamodb@3.1001.0':
     resolution:
       {
-        integrity: sha512-iS7cL3lZXxNQMkSnxHvAchZUzbnn06XPmUtTAqwZJQpKI26ZQDespiW8yBh+YIrGNMGV2pWlG3HYQodV8uYRqg==,
+        integrity: sha512-4iqiaohK/LokK4kQ212huBUjehuCLndQrobvYTF24v+gk4EoPpbKQ6ksPLnd5VyzwkbMKBMbNtd7eQQdRGcm0A==,
       }
     engines: { node: '>=20.0.0' }
     peerDependencies:
-      '@aws-sdk/client-dynamodb': ^3.1000.0
+      '@aws-sdk/client-dynamodb': ^3.1001.0
 
   '@aws-sdk/middleware-bucket-endpoint@3.972.6':
     resolution:
@@ -927,10 +920,10 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/middleware-flexible-checksums@3.973.1':
+  '@aws-sdk/middleware-flexible-checksums@3.973.2':
     resolution:
       {
-        integrity: sha512-QLXsxsI6VW8LuGK+/yx699wzqP/NMCGk/hSGP+qtB+Lcff+23UlbahyouLlk+nfT7Iu021SkXBhnAuVd6IZcPw==,
+        integrity: sha512-KM6QujWdasNjRLG+f7YEqEY5D36vR6Govm7nPIwxjILpb5rJ0pPJZpYY1nrzgtlxwJIYAznfBK5YXoLOHKHyfQ==,
       }
     engines: { node: '>=20.0.0' }
 
@@ -962,13 +955,6 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/middleware-sdk-s3@3.972.15':
-    resolution:
-      {
-        integrity: sha512-WDLgssevOU5BFx1s8jA7jj6cE5HuImz28sy9jKOaVtz0AW1lYqSzotzdyiybFaBcQTs5zxXOb2pUfyMxgEKY3Q==,
-      }
-    engines: { node: '>=20.0.0' }
-
   '@aws-sdk/middleware-sdk-s3@3.972.16':
     resolution:
       {
@@ -983,17 +969,17 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/middleware-user-agent@3.972.15':
+  '@aws-sdk/middleware-user-agent@3.972.16':
     resolution:
       {
-        integrity: sha512-ABlFVcIMmuRAwBT+8q5abAxOr7WmaINirDJBnqGY5b5jSDo00UMlg/G4a0xoAgwm6oAECeJcwkvDlxDwKf58fQ==,
+        integrity: sha512-AmVxtxn8ZkNJbuPu3KKfW9IkJgTgcEtgSwbo0NVcAb31iGvLgHXj2nbbyrUDfh2fx8otXmqL+qw1lRaTi+V3vA==,
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/nested-clients@3.996.3':
+  '@aws-sdk/nested-clients@3.996.4':
     resolution:
       {
-        integrity: sha512-AU5TY1V29xqwg/MxmA2odwysTez+ccFAhmfRJk+QZT5HNv90UTA9qKd1J9THlsQkvmH7HWTEV1lDNxkQO5PzNw==,
+        integrity: sha512-NowB1HfOnWC4kwZOnTg8E8rSL0U+RSjSa++UtEV4ipoH6JOjMLnHyGilqwl+Pe1f0Al6v9yMkSJ/8Ot0f578CQ==,
       }
     engines: { node: '>=20.0.0' }
 
@@ -1011,13 +997,6 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/signature-v4-multi-region@3.996.3':
-    resolution:
-      {
-        integrity: sha512-gQYI/Buwp0CAGQxY7mR5VzkP56rkWq2Y1ROkFuXh5XY94DsSjJw62B3I0N0lysQmtwiL2ht2KHI9NylM/RP4FA==,
-      }
-    engines: { node: '>=20.0.0' }
-
   '@aws-sdk/signature-v4-multi-region@3.996.4':
     resolution:
       {
@@ -1025,10 +1004,10 @@ packages:
       }
     engines: { node: '>=20.0.0' }
 
-  '@aws-sdk/token-providers@3.999.0':
+  '@aws-sdk/token-providers@3.1001.0':
     resolution:
       {
-        integrity: sha512-cx0hHUlgXULfykx4rdu/ciNAJaa3AL5xz3rieCz7NKJ68MJwlj3664Y8WR5MGgxfyYJBdamnkjNSx5Kekuc0cg==,
+        integrity: sha512-09XAq/uIYgeZhohuGRrR/R+ek3+ljFNdzWCXdqb9rlIERDjSfNiLjTtpHgSK1xTPmC5G4yWoEAyMfTXiggS6wA==,
       }
     engines: { node: '>=20.0.0' }
 
@@ -1082,10 +1061,10 @@ packages:
         integrity: sha512-Fwr/llD6GOrFgQnKaI2glhohdGuBDfHfora6iG9qsBBBR8xv1SdCSwbtf5CWlUdCw5X7g76G/9Hf0Inh0EmoxA==,
       }
 
-  '@aws-sdk/util-user-agent-node@3.973.0':
+  '@aws-sdk/util-user-agent-node@3.973.1':
     resolution:
       {
-        integrity: sha512-A9J2G4Nf236e9GpaC1JnA8wRn6u6GjnOXiTwBLA6NUJhlBTIGfrTy+K1IazmF8y+4OFdW3O5TZlhyspJMqiqjA==,
+        integrity: sha512-kmgbDqT7aCBEVrqESM2JUjbf0zhDUQ7wnt3q1RuVS+3mglrcfVb2bwkbmf38npOyyPGtQPV5dWN3m+sSFAVAgQ==,
       }
     engines: { node: '>=20.0.0' }
     peerDependencies:
@@ -1093,13 +1072,6 @@ packages:
     peerDependenciesMeta:
       aws-crt:
         optional: true
-
-  '@aws-sdk/xml-builder@3.972.8':
-    resolution:
-      {
-        integrity: sha512-Ql8elcUdYCha83Ol7NznBsgN5GVZnv3vUd86fEc6waU6oUdY0T1O9NODkEEOS/Uaogr87avDrUC6DSeM4oXjZg==,
-      }
-    engines: { node: '>=20.0.0' }
 
   '@aws-sdk/xml-builder@3.972.9':
     resolution:
@@ -2048,10 +2020,10 @@ packages:
       axios: ^1.3.1
       rxjs: ^6.0.0 || ^7.0.0
 
-  '@nestjs/common@11.1.14':
+  '@nestjs/common@11.1.15':
     resolution:
       {
-        integrity: sha512-IN/tlqd7Nl9gl6f0jsWEuOrQDaCI9vHzxv0fisHysfBQzfQIkqlv5A7w4Qge02BUQyczXT9HHPgHtWHCxhjRng==,
+        integrity: sha512-51sqIj83xEhmxi3D+QA+bo+hs+YTnZ5eJvOxa34VFiSlilT8DEF83kZc4t1t3arO8PjfDFI+LaTQQkx0gm1QGA==,
       }
     peerDependencies:
       class-transformer: '>=0.4.1'
@@ -2064,10 +2036,10 @@ packages:
       class-validator:
         optional: true
 
-  '@nestjs/core@11.1.14':
+  '@nestjs/core@11.1.15':
     resolution:
       {
-        integrity: sha512-7OXPPMoDr6z+5NkoQKu4hOhfjz/YYqM3bNilPqv1WVFWrzSmuNXxvhbX69YMmNmRYascPXiwESqf5jJdjKXEww==,
+        integrity: sha512-s+SQxA8yAGu8RapbI5Y3GFuNyvF1ocva2Va+d4K5T7G0eC5kAvYfiHr8iKvZg+rue5NjV7fYQQmEvA5jCTG+CA==,
       }
     engines: { node: '>= 20' }
     peerDependencies:
@@ -2093,10 +2065,10 @@ packages:
     peerDependencies:
       '@nestjs/common': ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0
 
-  '@nestjs/microservices@11.1.14':
+  '@nestjs/microservices@11.1.15':
     resolution:
       {
-        integrity: sha512-7x+QaX7351xJMYpjw4pqwoACXtSxuUQt4Prb7ZyqqsCawnBRrObPpZ/HIdpdKJPgo8vFfLJoAnkFJ+mQ6xz6Rw==,
+        integrity: sha512-9ee8AymMT/6HKNm10LRoYcUZKylu5K+FXRF7ynw+GlG4HXPVPlwst71wwNkbBHcqjJzfPhxEmC/j92sVeJURAg==,
       }
     peerDependencies:
       '@grpc/grpc-js': '*'
@@ -2141,10 +2113,10 @@ packages:
       '@nestjs/common': ^10.0.0 || ^11.0.0
       passport: ^0.5.0 || ^0.6.0 || ^0.7.0
 
-  '@nestjs/platform-express@11.1.14':
+  '@nestjs/platform-express@11.1.15':
     resolution:
       {
-        integrity: sha512-Fs+/j+mBSBSXErOQJ/YdUn/HqJGSJ4pGfiJyYOyz04l42uNVnqEakvu1kXLbxMabR6vd6/h9d6Bi4tso9p7o4Q==,
+        integrity: sha512-sR42dQ5fPy4NGbnhT4mRIJLL0h2eNY4KpLkcfd27vg5XdTjQQ07wkQORrw6rAkWkBvMRr0dmhAcUBnXpe7ro5Q==,
       }
     peerDependencies:
       '@nestjs/common': ^11.0.0
@@ -2743,13 +2715,6 @@ packages:
       }
     engines: { node: '>=18.0.0' }
 
-  '@smithy/core@3.23.6':
-    resolution:
-      {
-        integrity: sha512-4xE+0L2NrsFKpEVFlFELkIHQddBvMbQ41LRIP74dGCXnY1zQ9DgksrBcRBDJT+iOzGy4VEJIeU3hkUK5mn06kg==,
-      }
-    engines: { node: '>=18.0.0' }
-
   '@smithy/core@3.23.7':
     resolution:
       {
@@ -2796,13 +2761,6 @@ packages:
     resolution:
       {
         integrity: sha512-aArqzOEvcs2dK+xQVCgLbpJQGfZihw8SD4ymhkwNTtwKbnrzdhJsFDKuMQnam2kF69WzgJYOU5eJlCx+CA32bw==,
-      }
-    engines: { node: '>=18.0.0' }
-
-  '@smithy/fetch-http-handler@5.3.11':
-    resolution:
-      {
-        integrity: sha512-wbTRjOxdFuyEg0CpumjZO0hkUl+fetJFqxNROepuLIoijQh51aMBmzFLfoQdwRjxsuuS2jizzIUTjPWgd8pd7g==,
       }
     engines: { node: '>=18.0.0' }
 
@@ -2869,13 +2827,6 @@ packages:
       }
     engines: { node: '>=18.0.0' }
 
-  '@smithy/middleware-endpoint@4.4.20':
-    resolution:
-      {
-        integrity: sha512-9W6Np4ceBP3XCYAGLoMCmn8t2RRVzuD1ndWPLBbv7H9CrwM9Bprf6Up6BM9ZA/3alodg0b7Kf6ftBK9R1N04vw==,
-      }
-    engines: { node: '>=18.0.0' }
-
   '@smithy/middleware-endpoint@4.4.21':
     resolution:
       {
@@ -2883,10 +2834,10 @@ packages:
       }
     engines: { node: '>=18.0.0' }
 
-  '@smithy/middleware-retry@4.4.37':
+  '@smithy/middleware-retry@4.4.38':
     resolution:
       {
-        integrity: sha512-/1psZZllBBSQ7+qo5+hhLz7AEPGLx3Z0+e3ramMBEuPK2PfvLK4SrncDB9VegX5mBn+oP/UTDrM6IHrFjvX1ZA==,
+        integrity: sha512-WdHvdhjE6Fj78vxFwDKFDwlqGOGRUWrwGeuENUbTVE46Su9mnQM+dXHtbnCaQvwuSYrRsjpe8zUsFpwUp/azlA==,
       }
     engines: { node: '>=18.0.0' }
 
@@ -2908,13 +2859,6 @@ packages:
     resolution:
       {
         integrity: sha512-UALRbJtVX34AdP2VECKVlnNgidLHA2A7YgcJzwSBg1hzmnO/bZBHl/LDQQyYifzUwp1UOODnl9JJ3KNawpUJ9w==,
-      }
-    engines: { node: '>=18.0.0' }
-
-  '@smithy/node-http-handler@4.4.12':
-    resolution:
-      {
-        integrity: sha512-zo1+WKJkR9x7ZtMeMDAAsq2PufwiLDmkhcjpWPRRkmeIuOm6nq1qjFICSZbnjBvD09ei8KMo26BWxsu2BUU+5w==,
       }
     engines: { node: '>=18.0.0' }
 
@@ -2971,13 +2915,6 @@ packages:
     resolution:
       {
         integrity: sha512-Wab3wW8468WqTKIxI+aZe3JYO52/RYT/8sDOdzkUhjnLakLe9qoQqIcfih/qxcF4qWEFoWBszY0mj5uxffaVXA==,
-      }
-    engines: { node: '>=18.0.0' }
-
-  '@smithy/smithy-client@4.12.0':
-    resolution:
-      {
-        integrity: sha512-R8bQ9K3lCcXyZmBnQqUZJF4ChZmtWT5NLi6x5kgWx5D+/j0KorXcA0YcFg/X5TOgnTCy1tbKc6z2g2y4amFupQ==,
       }
     engines: { node: '>=18.0.0' }
 
@@ -3044,17 +2981,17 @@ packages:
       }
     engines: { node: '>=18.0.0' }
 
-  '@smithy/util-defaults-mode-browser@4.3.36':
+  '@smithy/util-defaults-mode-browser@4.3.37':
     resolution:
       {
-        integrity: sha512-R0smq7EHQXRVMxkAxtH5akJ/FvgAmNF6bUy/GwY/N20T4GrwjT633NFm0VuRpC+8Bbv8R9A0DoJ9OiZL/M3xew==,
+        integrity: sha512-JlPZhV1kQCGNJgofRTU6E8kHrjCKsb6cps8gco8QDVaFl7biFYzHg0p1x89ytIWyVyCkY3nOpO8tJPM47Vqlww==,
       }
     engines: { node: '>=18.0.0' }
 
-  '@smithy/util-defaults-mode-node@4.2.39':
+  '@smithy/util-defaults-mode-node@4.2.40':
     resolution:
       {
-        integrity: sha512-otWuoDm35btJV1L8MyHrPl462B07QCdMTktKc7/yM+Psv6KbED/ziXiHnmr7yPHUjfIwE9S8Max0LO24Mo3ZVg==,
+        integrity: sha512-BM5cPEsyxHdYYO4Da77E94lenhaVPNUzBTyCGDkcw/n/mE8Q1cfHwr+n/w2bNPuUsPC30WaW5/hGKWOTKqw8kw==,
       }
     engines: { node: '>=18.0.0' }
 
@@ -3083,13 +3020,6 @@ packages:
     resolution:
       {
         integrity: sha512-HrBzistfpyE5uqTwiyLsFHscgnwB0kgv8vySp7q5kZ0Eltn/tjosaSGGDj/jJ9ys7pWzIP/icE2d+7vMKXLv7A==,
-      }
-    engines: { node: '>=18.0.0' }
-
-  '@smithy/util-stream@4.5.15':
-    resolution:
-      {
-        integrity: sha512-OlOKnaqnkU9X+6wEkd7mN+WB7orPbCVDauXOj22Q7VtiTkvy7ZdSsOg4QiNAZMgI4OkvNf+/VLUC3VXkxuWJZw==,
       }
     engines: { node: '>=18.0.0' }
 
@@ -3334,12 +3264,6 @@ packages:
     resolution:
       {
         integrity: sha512-fPxQqz4VTgPI/IQ+lj9r0h+fDR66bzoeMGHp8ASee+32OSGIkeASsoZuJixsQoVef1QJbeubcPBxKk22QVoWdw==,
-      }
-
-  '@types/node@25.3.3':
-    resolution:
-      {
-        integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==,
       }
 
   '@types/nodemailer@6.4.23':
@@ -4071,10 +3995,10 @@ packages:
       }
     engines: { node: '>=10' }
 
-  caniuse-lite@1.0.30001775:
+  caniuse-lite@1.0.30001776:
     resolution:
       {
-        integrity: sha512-s3Qv7Lht9zbVKE9XoTyRG6wVDCKdtOFIjBGg3+Yhn6JaytuNKPIjBMTMIY1AnOH3seL5mvF+x33oGAyK3hVt3A==,
+        integrity: sha512-sg01JDPzZ9jGshqKSckOQthXnYwOEP50jeVFhaSFbZcOy05TiuuaffDOfcwtCisJ9kNQuLBFibYywv2Bgm9osw==,
       }
 
   chai@5.3.3:
@@ -4762,10 +4686,10 @@ packages:
     engines: { node: '>=0.10.0' }
     hasBin: true
 
-  electron-to-chromium@1.5.302:
+  electron-to-chromium@1.5.307:
     resolution:
       {
-        integrity: sha512-sM6HAN2LyK82IyPBpznDRqlTQAtuSaO+ShzFiWTvoMJLHyZ+Y39r8VMfHzwbU8MVBzQ4Wdn85+wlZl2TLGIlwg==,
+        integrity: sha512-5z3uFKBWjiNR44nFcYdkcXjKMbg5KXNdciu7mhTPo9tB7NbqSNP2sSnGR+fqknZSCwKkBN+oxiiajWs4dT6ORg==,
       }
 
   emoji-regex@10.6.0:
@@ -5271,13 +5195,6 @@ packages:
         integrity: sha512-fpZuDogrAgnyt9oDDz+5DBz0zgPdPZz6D4IR7iESxRXElrlGTRkHJ9eEt+SACRJwT0FNFrt71DFQIUFBJfX/uQ==,
       }
 
-  fast-xml-parser@5.3.6:
-    resolution:
-      {
-        integrity: sha512-QNI3sAvSvaOiaMl8FYU4trnEzCwiRr8XMWgAHzlrWpTSj+QaCSvOf1h82OEP1s4hiAXhnbXSyFWCf4ldZzZRVA==,
-      }
-    hasBin: true
-
   fast-xml-parser@5.4.1:
     resolution:
       {
@@ -5365,10 +5282,10 @@ packages:
       }
     engines: { node: '>=16' }
 
-  flatted@3.3.3:
+  flatted@3.3.4:
     resolution:
       {
-        integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==,
+        integrity: sha512-3+mMldrTAPdta5kjX2G2J7iX4zxtnwpdA8Tr2ZSjkyPSanvbZAcy6flmtnXbEybHrDcU9641lxrMfFuUxVz9vA==,
       }
 
   follow-redirects@1.15.11:
@@ -5588,7 +5505,7 @@ packages:
       {
         integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==,
       }
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   globals@14.0.0:
     resolution:
@@ -6478,6 +6395,12 @@ packages:
         integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==,
       }
 
+  lodash@4.17.23:
+    resolution:
+      {
+        integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==,
+      }
+
   log-update@6.1.0:
     resolution:
       {
@@ -6908,13 +6831,6 @@ packages:
       }
     hasBin: true
 
-  mkdirp@0.5.6:
-    resolution:
-      {
-        integrity: sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==,
-      }
-    hasBin: true
-
   mkdirp@1.0.4:
     resolution:
       {
@@ -6941,10 +6857,10 @@ packages:
         integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==,
       }
 
-  multer@2.0.2:
+  multer@2.1.0:
     resolution:
       {
-        integrity: sha512-u7f2xaZ/UG8oLXHvtF/oWTRvT44p9ecwBBqTwgJVq0+4BW1g8OW01TyMEGWBHbyMOYVHXslaut7qEQ1meATXgw==,
+        integrity: sha512-TBm6j41rxNohqawsxlsWsNNh/VdV4QFXcBvRcPhXaA05EZ79z0qJ2bQFpync6JBoHTeNY5Q1JpG7AlTjdlfAEA==,
       }
     engines: { node: '>= 10.16.0' }
 
@@ -7648,10 +7564,10 @@ packages:
         integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==,
       }
 
-  postcss@8.5.6:
+  postcss@8.5.8:
     resolution:
       {
-        integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==,
+        integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==,
       }
     engines: { node: ^10 || ^12 || >=14 }
 
@@ -8883,58 +8799,58 @@ packages:
         integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==,
       }
 
-  turbo-darwin-64@2.8.12:
+  turbo-darwin-64@2.8.13:
     resolution:
       {
-        integrity: sha512-EiHJmW2MeQQx+21x8hjMHw/uPhXt9PIxvDrxzOtyVwrXzL0tQmsxtO4qHf2l7uA+K6PUJ4+TjY1MHZDuCvWXrw==,
+        integrity: sha512-PmOvodQNiOj77+Zwoqku70vwVjKzL34RTNxxoARjp5RU5FOj/CGiC6vcDQhNtFPUOWSAaogHF5qIka9TBhX4XA==,
       }
     cpu: [x64]
     os: [darwin]
 
-  turbo-darwin-arm64@2.8.12:
+  turbo-darwin-arm64@2.8.13:
     resolution:
       {
-        integrity: sha512-cbqqGN0vd7ly2TeuaM8k9AK9u1CABO4kBA5KPSqovTiLL3sORccn/mZzJSbvQf0EsYRfU34MgW5FotfwW3kx8Q==,
+        integrity: sha512-kI+anKcLIM4L8h+NsM7mtAUpElkCOxv5LgiQVQR8BASyDFfc8Efj5kCk3cqxuxOvIqx0sLfCX7atrHQ2kwuNJQ==,
       }
     cpu: [arm64]
     os: [darwin]
 
-  turbo-linux-64@2.8.12:
+  turbo-linux-64@2.8.13:
     resolution:
       {
-        integrity: sha512-jXKw9j4r4q6s0goSXuKI3aKbQK2qiNeP25lGGEnq018TM6SWRW1CCpPMxyG91aCKrub7wDm/K45sGNT4ZFBcFQ==,
+        integrity: sha512-j29KnQhHyzdzgCykBFeBqUPS4Wj7lWMnZ8CHqytlYDap4Jy70l4RNG46pOL9+lGu6DepK2s1rE86zQfo0IOdPw==,
       }
     cpu: [x64]
     os: [linux]
 
-  turbo-linux-arm64@2.8.12:
+  turbo-linux-arm64@2.8.13:
     resolution:
       {
-        integrity: sha512-BRJCMdyXjyBoL0GYpvj9d2WNfMHwc3tKmJG5ATn2Efvil9LsiOsd/93/NxDqW0jACtHFNVOPnd/CBwXRPiRbwA==,
+        integrity: sha512-OEl1YocXGZDRDh28doOUn49QwNe82kXljO1HXApjU0LapkDiGpfl3jkAlPKxEkGDSYWc8MH5Ll8S16Rf5tEBYg==,
       }
     cpu: [arm64]
     os: [linux]
 
-  turbo-windows-64@2.8.12:
+  turbo-windows-64@2.8.13:
     resolution:
       {
-        integrity: sha512-vyFOlpFFzQFkikvSVhVkESEfzIopgs2J7J1rYvtSwSHQ4zmHxkC95Q8Kjkus8gg+8X2mZyP1GS5jirmaypGiPw==,
+        integrity: sha512-717bVk1+Pn2Jody7OmWludhEirEe0okoj1NpRbSm5kVZz/yNN/jfjbxWC6ilimXMz7xoMT3IDfQFJsFR3PMANA==,
       }
     cpu: [x64]
     os: [win32]
 
-  turbo-windows-arm64@2.8.12:
+  turbo-windows-arm64@2.8.13:
     resolution:
       {
-        integrity: sha512-9nRnlw5DF0LkJClkIws1evaIF36dmmMEO84J5Uj4oQ8C0QTHwlH7DNe5Kq2Jdmu8GXESCNDNuUYG8Cx6W/vm3g==,
+        integrity: sha512-R819HShLIT0Wj6zWVnIsYvSNtRNj1q9VIyaUz0P24SMcLCbQZIm1sV09F4SDbg+KCCumqD2lcaR2UViQ8SnUJA==,
       }
     cpu: [arm64]
     os: [win32]
 
-  turbo@2.8.12:
+  turbo@2.8.13:
     resolution:
       {
-        integrity: sha512-auUAMLmi0eJhxDhQrxzvuhfEbICnVt0CTiYQYY8WyRJ5nwCDZxD0JG8bCSxT4nusI2CwJzmZAay5BfF6LmK7Hw==,
+        integrity: sha512-nyM99hwFB9/DHaFyKEqatdayGjsMNYsQ/XBNO6MITc7roncZetKb97MpHxWf3uiU+LB9c9HUlU3Jp2Ixei2k1A==,
       }
     hasBin: true
 
@@ -9063,12 +8979,6 @@ packages:
     resolution:
       {
         integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==,
-      }
-
-  undici-types@7.18.2:
-    resolution:
-      {
-        integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==,
       }
 
   unpipe@1.0.0:
@@ -9534,44 +9444,44 @@ snapshots:
       '@smithy/util-utf8': 2.3.0
       tslib: 2.8.1
 
-  '@aws-sdk/client-dynamodb@3.1000.0':
+  '@aws-sdk/client-dynamodb@3.1001.0':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/credential-provider-node': 3.972.14
-      '@aws-sdk/dynamodb-codec': 3.972.16
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/credential-provider-node': 3.972.15
+      '@aws-sdk/dynamodb-codec': 3.972.17
       '@aws-sdk/middleware-endpoint-discovery': 3.972.6
       '@aws-sdk/middleware-host-header': 3.972.6
       '@aws-sdk/middleware-logger': 3.972.6
       '@aws-sdk/middleware-recursion-detection': 3.972.6
-      '@aws-sdk/middleware-user-agent': 3.972.15
+      '@aws-sdk/middleware-user-agent': 3.972.16
       '@aws-sdk/region-config-resolver': 3.972.6
       '@aws-sdk/types': 3.973.4
       '@aws-sdk/util-endpoints': 3.996.3
       '@aws-sdk/util-user-agent-browser': 3.972.6
-      '@aws-sdk/util-user-agent-node': 3.973.0
+      '@aws-sdk/util-user-agent-node': 3.973.1
       '@smithy/config-resolver': 4.4.9
-      '@smithy/core': 3.23.6
-      '@smithy/fetch-http-handler': 5.3.11
+      '@smithy/core': 3.23.7
+      '@smithy/fetch-http-handler': 5.3.12
       '@smithy/hash-node': 4.2.10
       '@smithy/invalid-dependency': 4.2.10
       '@smithy/middleware-content-length': 4.2.10
-      '@smithy/middleware-endpoint': 4.4.20
-      '@smithy/middleware-retry': 4.4.37
+      '@smithy/middleware-endpoint': 4.4.21
+      '@smithy/middleware-retry': 4.4.38
       '@smithy/middleware-serde': 4.2.11
       '@smithy/middleware-stack': 4.2.10
       '@smithy/node-config-provider': 4.3.10
-      '@smithy/node-http-handler': 4.4.12
+      '@smithy/node-http-handler': 4.4.13
       '@smithy/protocol-http': 5.3.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       '@smithy/url-parser': 4.2.10
       '@smithy/util-base64': 4.3.1
       '@smithy/util-body-length-browser': 4.2.1
       '@smithy/util-body-length-node': 4.2.2
-      '@smithy/util-defaults-mode-browser': 4.3.36
-      '@smithy/util-defaults-mode-node': 4.2.39
+      '@smithy/util-defaults-mode-browser': 4.3.37
+      '@smithy/util-defaults-mode-node': 4.2.40
       '@smithy/util-endpoints': 3.3.1
       '@smithy/util-middleware': 4.2.10
       '@smithy/util-retry': 4.2.10
@@ -9581,81 +9491,65 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/client-s3@3.1000.0':
+  '@aws-sdk/client-s3@3.1001.0':
     dependencies:
       '@aws-crypto/sha1-browser': 5.2.0
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/credential-provider-node': 3.972.14
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/credential-provider-node': 3.972.15
       '@aws-sdk/middleware-bucket-endpoint': 3.972.6
       '@aws-sdk/middleware-expect-continue': 3.972.6
-      '@aws-sdk/middleware-flexible-checksums': 3.973.1
+      '@aws-sdk/middleware-flexible-checksums': 3.973.2
       '@aws-sdk/middleware-host-header': 3.972.6
       '@aws-sdk/middleware-location-constraint': 3.972.6
       '@aws-sdk/middleware-logger': 3.972.6
       '@aws-sdk/middleware-recursion-detection': 3.972.6
-      '@aws-sdk/middleware-sdk-s3': 3.972.15
+      '@aws-sdk/middleware-sdk-s3': 3.972.16
       '@aws-sdk/middleware-ssec': 3.972.6
-      '@aws-sdk/middleware-user-agent': 3.972.15
+      '@aws-sdk/middleware-user-agent': 3.972.16
       '@aws-sdk/region-config-resolver': 3.972.6
-      '@aws-sdk/signature-v4-multi-region': 3.996.3
+      '@aws-sdk/signature-v4-multi-region': 3.996.4
       '@aws-sdk/types': 3.973.4
       '@aws-sdk/util-endpoints': 3.996.3
       '@aws-sdk/util-user-agent-browser': 3.972.6
-      '@aws-sdk/util-user-agent-node': 3.973.0
+      '@aws-sdk/util-user-agent-node': 3.973.1
       '@smithy/config-resolver': 4.4.9
-      '@smithy/core': 3.23.6
+      '@smithy/core': 3.23.7
       '@smithy/eventstream-serde-browser': 4.2.10
       '@smithy/eventstream-serde-config-resolver': 4.3.10
       '@smithy/eventstream-serde-node': 4.2.10
-      '@smithy/fetch-http-handler': 5.3.11
+      '@smithy/fetch-http-handler': 5.3.12
       '@smithy/hash-blob-browser': 4.2.11
       '@smithy/hash-node': 4.2.10
       '@smithy/hash-stream-node': 4.2.10
       '@smithy/invalid-dependency': 4.2.10
       '@smithy/md5-js': 4.2.10
       '@smithy/middleware-content-length': 4.2.10
-      '@smithy/middleware-endpoint': 4.4.20
-      '@smithy/middleware-retry': 4.4.37
+      '@smithy/middleware-endpoint': 4.4.21
+      '@smithy/middleware-retry': 4.4.38
       '@smithy/middleware-serde': 4.2.11
       '@smithy/middleware-stack': 4.2.10
       '@smithy/node-config-provider': 4.3.10
-      '@smithy/node-http-handler': 4.4.12
+      '@smithy/node-http-handler': 4.4.13
       '@smithy/protocol-http': 5.3.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       '@smithy/url-parser': 4.2.10
       '@smithy/util-base64': 4.3.1
       '@smithy/util-body-length-browser': 4.2.1
       '@smithy/util-body-length-node': 4.2.2
-      '@smithy/util-defaults-mode-browser': 4.3.36
-      '@smithy/util-defaults-mode-node': 4.2.39
+      '@smithy/util-defaults-mode-browser': 4.3.37
+      '@smithy/util-defaults-mode-node': 4.2.40
       '@smithy/util-endpoints': 3.3.1
       '@smithy/util-middleware': 4.2.10
       '@smithy/util-retry': 4.2.10
-      '@smithy/util-stream': 4.5.15
+      '@smithy/util-stream': 4.5.16
       '@smithy/util-utf8': 4.2.1
       '@smithy/util-waiter': 4.2.10
       tslib: 2.8.1
     transitivePeerDependencies:
       - aws-crt
-
-  '@aws-sdk/core@3.973.15':
-    dependencies:
-      '@aws-sdk/types': 3.973.4
-      '@aws-sdk/xml-builder': 3.972.8
-      '@smithy/core': 3.23.6
-      '@smithy/node-config-provider': 4.3.10
-      '@smithy/property-provider': 4.2.10
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/signature-v4': 5.3.10
-      '@smithy/smithy-client': 4.12.0
-      '@smithy/types': 4.13.0
-      '@smithy/util-base64': 4.3.1
-      '@smithy/util-middleware': 4.2.10
-      '@smithy/util-utf8': 4.2.1
-      tslib: 2.8.1
 
   '@aws-sdk/core@3.973.16':
     dependencies:
@@ -9678,37 +9572,37 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-env@3.972.13':
+  '@aws-sdk/credential-provider-env@3.972.14':
     dependencies:
-      '@aws-sdk/core': 3.973.15
+      '@aws-sdk/core': 3.973.16
       '@aws-sdk/types': 3.973.4
       '@smithy/property-provider': 4.2.10
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-http@3.972.15':
+  '@aws-sdk/credential-provider-http@3.972.16':
     dependencies:
-      '@aws-sdk/core': 3.973.15
+      '@aws-sdk/core': 3.973.16
       '@aws-sdk/types': 3.973.4
-      '@smithy/fetch-http-handler': 5.3.11
-      '@smithy/node-http-handler': 4.4.12
+      '@smithy/fetch-http-handler': 5.3.12
+      '@smithy/node-http-handler': 4.4.13
       '@smithy/property-provider': 4.2.10
       '@smithy/protocol-http': 5.3.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
-      '@smithy/util-stream': 4.5.15
+      '@smithy/util-stream': 4.5.16
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-ini@3.972.13':
+  '@aws-sdk/credential-provider-ini@3.972.14':
     dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/credential-provider-env': 3.972.13
-      '@aws-sdk/credential-provider-http': 3.972.15
-      '@aws-sdk/credential-provider-login': 3.972.13
-      '@aws-sdk/credential-provider-process': 3.972.13
-      '@aws-sdk/credential-provider-sso': 3.972.13
-      '@aws-sdk/credential-provider-web-identity': 3.972.13
-      '@aws-sdk/nested-clients': 3.996.3
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/credential-provider-env': 3.972.14
+      '@aws-sdk/credential-provider-http': 3.972.16
+      '@aws-sdk/credential-provider-login': 3.972.14
+      '@aws-sdk/credential-provider-process': 3.972.14
+      '@aws-sdk/credential-provider-sso': 3.972.14
+      '@aws-sdk/credential-provider-web-identity': 3.972.14
+      '@aws-sdk/nested-clients': 3.996.4
       '@aws-sdk/types': 3.973.4
       '@smithy/credential-provider-imds': 4.2.10
       '@smithy/property-provider': 4.2.10
@@ -9718,10 +9612,10 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-provider-login@3.972.13':
+  '@aws-sdk/credential-provider-login@3.972.14':
     dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/nested-clients': 3.996.3
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/nested-clients': 3.996.4
       '@aws-sdk/types': 3.973.4
       '@smithy/property-provider': 4.2.10
       '@smithy/protocol-http': 5.3.10
@@ -9731,14 +9625,14 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-provider-node@3.972.14':
+  '@aws-sdk/credential-provider-node@3.972.15':
     dependencies:
-      '@aws-sdk/credential-provider-env': 3.972.13
-      '@aws-sdk/credential-provider-http': 3.972.15
-      '@aws-sdk/credential-provider-ini': 3.972.13
-      '@aws-sdk/credential-provider-process': 3.972.13
-      '@aws-sdk/credential-provider-sso': 3.972.13
-      '@aws-sdk/credential-provider-web-identity': 3.972.13
+      '@aws-sdk/credential-provider-env': 3.972.14
+      '@aws-sdk/credential-provider-http': 3.972.16
+      '@aws-sdk/credential-provider-ini': 3.972.14
+      '@aws-sdk/credential-provider-process': 3.972.14
+      '@aws-sdk/credential-provider-sso': 3.972.14
+      '@aws-sdk/credential-provider-web-identity': 3.972.14
       '@aws-sdk/types': 3.973.4
       '@smithy/credential-provider-imds': 4.2.10
       '@smithy/property-provider': 4.2.10
@@ -9748,32 +9642,20 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/credential-provider-process@3.972.13':
+  '@aws-sdk/credential-provider-process@3.972.14':
     dependencies:
-      '@aws-sdk/core': 3.973.15
+      '@aws-sdk/core': 3.973.16
       '@aws-sdk/types': 3.973.4
       '@smithy/property-provider': 4.2.10
       '@smithy/shared-ini-file-loader': 4.4.5
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/credential-provider-sso@3.972.13':
+  '@aws-sdk/credential-provider-sso@3.972.14':
     dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/nested-clients': 3.996.3
-      '@aws-sdk/token-providers': 3.999.0
-      '@aws-sdk/types': 3.973.4
-      '@smithy/property-provider': 4.2.10
-      '@smithy/shared-ini-file-loader': 4.4.5
-      '@smithy/types': 4.13.0
-      tslib: 2.8.1
-    transitivePeerDependencies:
-      - aws-crt
-
-  '@aws-sdk/credential-provider-web-identity@3.972.13':
-    dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/nested-clients': 3.996.3
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/nested-clients': 3.996.4
+      '@aws-sdk/token-providers': 3.1001.0
       '@aws-sdk/types': 3.973.4
       '@smithy/property-provider': 4.2.10
       '@smithy/shared-ini-file-loader': 4.4.5
@@ -9782,11 +9664,23 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  '@aws-sdk/dynamodb-codec@3.972.16':
+  '@aws-sdk/credential-provider-web-identity@3.972.14':
     dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@smithy/core': 3.23.6
-      '@smithy/smithy-client': 4.12.0
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/nested-clients': 3.996.4
+      '@aws-sdk/types': 3.973.4
+      '@smithy/property-provider': 4.2.10
+      '@smithy/shared-ini-file-loader': 4.4.5
+      '@smithy/types': 4.13.0
+      tslib: 2.8.1
+    transitivePeerDependencies:
+      - aws-crt
+
+  '@aws-sdk/dynamodb-codec@3.972.17':
+    dependencies:
+      '@aws-sdk/core': 3.973.16
+      '@smithy/core': 3.23.7
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       '@smithy/util-base64': 4.3.1
       tslib: 2.8.1
@@ -9796,13 +9690,13 @@ snapshots:
       mnemonist: 0.38.3
       tslib: 2.8.1
 
-  '@aws-sdk/lib-dynamodb@3.1000.0(@aws-sdk/client-dynamodb@3.1000.0)':
+  '@aws-sdk/lib-dynamodb@3.1001.0(@aws-sdk/client-dynamodb@3.1001.0)':
     dependencies:
-      '@aws-sdk/client-dynamodb': 3.1000.0
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/util-dynamodb': 3.996.1(@aws-sdk/client-dynamodb@3.1000.0)
-      '@smithy/core': 3.23.6
-      '@smithy/smithy-client': 4.12.0
+      '@aws-sdk/client-dynamodb': 3.1001.0
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/util-dynamodb': 3.996.1(@aws-sdk/client-dynamodb@3.1001.0)
+      '@smithy/core': 3.23.7
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
@@ -9832,12 +9726,12 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/middleware-flexible-checksums@3.973.1':
+  '@aws-sdk/middleware-flexible-checksums@3.973.2':
     dependencies:
       '@aws-crypto/crc32': 5.2.0
       '@aws-crypto/crc32c': 5.2.0
       '@aws-crypto/util': 5.2.0
-      '@aws-sdk/core': 3.973.15
+      '@aws-sdk/core': 3.973.16
       '@aws-sdk/crc64-nvme': 3.972.3
       '@aws-sdk/types': 3.973.4
       '@smithy/is-array-buffer': 4.2.1
@@ -9845,7 +9739,7 @@ snapshots:
       '@smithy/protocol-http': 5.3.10
       '@smithy/types': 4.13.0
       '@smithy/util-middleware': 4.2.10
-      '@smithy/util-stream': 4.5.15
+      '@smithy/util-stream': 4.5.16
       '@smithy/util-utf8': 4.2.1
       tslib: 2.8.1
 
@@ -9876,23 +9770,6 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/middleware-sdk-s3@3.972.15':
-    dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/types': 3.973.4
-      '@aws-sdk/util-arn-parser': 3.972.2
-      '@smithy/core': 3.23.6
-      '@smithy/node-config-provider': 4.3.10
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/signature-v4': 5.3.10
-      '@smithy/smithy-client': 4.12.0
-      '@smithy/types': 4.13.0
-      '@smithy/util-config-provider': 4.2.1
-      '@smithy/util-middleware': 4.2.10
-      '@smithy/util-stream': 4.5.15
-      '@smithy/util-utf8': 4.2.1
-      tslib: 2.8.1
-
   '@aws-sdk/middleware-sdk-s3@3.972.16':
     dependencies:
       '@aws-sdk/core': 3.973.16
@@ -9916,51 +9793,51 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/middleware-user-agent@3.972.15':
+  '@aws-sdk/middleware-user-agent@3.972.16':
     dependencies:
-      '@aws-sdk/core': 3.973.15
+      '@aws-sdk/core': 3.973.16
       '@aws-sdk/types': 3.973.4
       '@aws-sdk/util-endpoints': 3.996.3
-      '@smithy/core': 3.23.6
+      '@smithy/core': 3.23.7
       '@smithy/protocol-http': 5.3.10
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/nested-clients@3.996.3':
+  '@aws-sdk/nested-clients@3.996.4':
     dependencies:
       '@aws-crypto/sha256-browser': 5.2.0
       '@aws-crypto/sha256-js': 5.2.0
-      '@aws-sdk/core': 3.973.15
+      '@aws-sdk/core': 3.973.16
       '@aws-sdk/middleware-host-header': 3.972.6
       '@aws-sdk/middleware-logger': 3.972.6
       '@aws-sdk/middleware-recursion-detection': 3.972.6
-      '@aws-sdk/middleware-user-agent': 3.972.15
+      '@aws-sdk/middleware-user-agent': 3.972.16
       '@aws-sdk/region-config-resolver': 3.972.6
       '@aws-sdk/types': 3.973.4
       '@aws-sdk/util-endpoints': 3.996.3
       '@aws-sdk/util-user-agent-browser': 3.972.6
-      '@aws-sdk/util-user-agent-node': 3.973.0
+      '@aws-sdk/util-user-agent-node': 3.973.1
       '@smithy/config-resolver': 4.4.9
-      '@smithy/core': 3.23.6
-      '@smithy/fetch-http-handler': 5.3.11
+      '@smithy/core': 3.23.7
+      '@smithy/fetch-http-handler': 5.3.12
       '@smithy/hash-node': 4.2.10
       '@smithy/invalid-dependency': 4.2.10
       '@smithy/middleware-content-length': 4.2.10
-      '@smithy/middleware-endpoint': 4.4.20
-      '@smithy/middleware-retry': 4.4.37
+      '@smithy/middleware-endpoint': 4.4.21
+      '@smithy/middleware-retry': 4.4.38
       '@smithy/middleware-serde': 4.2.11
       '@smithy/middleware-stack': 4.2.10
       '@smithy/node-config-provider': 4.3.10
-      '@smithy/node-http-handler': 4.4.12
+      '@smithy/node-http-handler': 4.4.13
       '@smithy/protocol-http': 5.3.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       '@smithy/url-parser': 4.2.10
       '@smithy/util-base64': 4.3.1
       '@smithy/util-body-length-browser': 4.2.1
       '@smithy/util-body-length-node': 4.2.2
-      '@smithy/util-defaults-mode-browser': 4.3.36
-      '@smithy/util-defaults-mode-node': 4.2.39
+      '@smithy/util-defaults-mode-browser': 4.3.37
+      '@smithy/util-defaults-mode-node': 4.2.40
       '@smithy/util-endpoints': 3.3.1
       '@smithy/util-middleware': 4.2.10
       '@smithy/util-retry': 4.2.10
@@ -9988,15 +9865,6 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/signature-v4-multi-region@3.996.3':
-    dependencies:
-      '@aws-sdk/middleware-sdk-s3': 3.972.15
-      '@aws-sdk/types': 3.973.4
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/signature-v4': 5.3.10
-      '@smithy/types': 4.13.0
-      tslib: 2.8.1
-
   '@aws-sdk/signature-v4-multi-region@3.996.4':
     dependencies:
       '@aws-sdk/middleware-sdk-s3': 3.972.16
@@ -10006,10 +9874,10 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@aws-sdk/token-providers@3.999.0':
+  '@aws-sdk/token-providers@3.1001.0':
     dependencies:
-      '@aws-sdk/core': 3.973.15
-      '@aws-sdk/nested-clients': 3.996.3
+      '@aws-sdk/core': 3.973.16
+      '@aws-sdk/nested-clients': 3.996.4
       '@aws-sdk/types': 3.973.4
       '@smithy/property-provider': 4.2.10
       '@smithy/shared-ini-file-loader': 4.4.5
@@ -10027,9 +9895,9 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@aws-sdk/util-dynamodb@3.996.1(@aws-sdk/client-dynamodb@3.1000.0)':
+  '@aws-sdk/util-dynamodb@3.996.1(@aws-sdk/client-dynamodb@3.1001.0)':
     dependencies:
-      '@aws-sdk/client-dynamodb': 3.1000.0
+      '@aws-sdk/client-dynamodb': 3.1001.0
       tslib: 2.8.1
 
   '@aws-sdk/util-endpoints@3.996.3':
@@ -10058,18 +9926,12 @@ snapshots:
       bowser: 2.14.1
       tslib: 2.8.1
 
-  '@aws-sdk/util-user-agent-node@3.973.0':
+  '@aws-sdk/util-user-agent-node@3.973.1':
     dependencies:
-      '@aws-sdk/middleware-user-agent': 3.972.15
+      '@aws-sdk/middleware-user-agent': 3.972.16
       '@aws-sdk/types': 3.973.4
       '@smithy/node-config-provider': 4.3.10
       '@smithy/types': 4.13.0
-      tslib: 2.8.1
-
-  '@aws-sdk/xml-builder@3.972.8':
-    dependencies:
-      '@smithy/types': 4.13.0
-      fast-xml-parser: 5.3.6
       tslib: 2.8.1
 
   '@aws-sdk/xml-builder@3.972.9':
@@ -10527,11 +10389,11 @@ snapshots:
       chevrotain: 10.5.0
       lilconfig: 2.1.0
 
-  '@nestjs-modules/mailer@2.0.2(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(nodemailer@6.10.1)':
+  '@nestjs-modules/mailer@2.0.2(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(nodemailer@6.10.1)':
     dependencies:
       '@css-inline/css-inline': 0.14.1
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       glob: 10.3.12
       nodemailer: 6.10.1
     optionalDependencies:
@@ -10547,13 +10409,13 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@nestjs/axios@3.1.3(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)':
+  '@nestjs/axios@3.1.3(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       axios: 1.13.6
       rxjs: 7.8.2
 
-  '@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
       file-type: 21.3.0
       iterare: 1.2.1
@@ -10568,9 +10430,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@nestjs/core@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/core@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nuxt/opencollective': 0.4.1
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
@@ -10580,19 +10442,19 @@ snapshots:
       tslib: 2.8.1
       uid: 2.0.2
     optionalDependencies:
-      '@nestjs/microservices': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/platform-express': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)
+      '@nestjs/microservices': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/platform-express': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)
 
-  '@nestjs/jwt@11.0.2(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))':
+  '@nestjs/jwt@11.0.2(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@types/jsonwebtoken': 9.0.10
       jsonwebtoken: 9.0.3
 
-  '@nestjs/microservices@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/microservices@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       iterare: 1.2.1
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
@@ -10600,40 +10462,40 @@ snapshots:
     optionalDependencies:
       amqplib: 0.10.9
 
-  '@nestjs/passport@11.0.5(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(passport@0.7.0)':
+  '@nestjs/passport@11.0.5(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(passport@0.7.0)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       passport: 0.7.0
 
-  '@nestjs/platform-express@11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)':
+  '@nestjs/platform-express@11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       cors: 2.8.6
       express: 5.2.1
-      multer: 2.0.2
+      multer: 2.1.0
       path-to-regexp: 8.3.0
       tslib: 2.8.1
     transitivePeerDependencies:
       - supports-color
 
-  '@nestjs/terminus@11.1.1(@nestjs/axios@3.1.3(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2))(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(@nestjs/microservices@11.1.14)(@prisma/client@7.4.2(prisma@7.4.2(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3))(typescript@5.9.3))(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/terminus@11.1.1(@nestjs/axios@3.1.3(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2))(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(@nestjs/microservices@11.1.15)(@prisma/client@7.4.2(prisma@7.4.2(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3))(typescript@5.9.3))(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       boxen: 5.1.2
       check-disk-space: 3.4.0
       reflect-metadata: 0.2.2
       rxjs: 7.8.2
     optionalDependencies:
-      '@nestjs/axios': 3.1.3(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)
-      '@nestjs/microservices': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/axios': 3.1.3(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(axios@1.13.6)(rxjs@7.8.2)
+      '@nestjs/microservices': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(amqplib@0.10.9)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@prisma/client': 7.4.2(prisma@7.4.2(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.9.3))(typescript@5.9.3)
 
-  '@nestjs/throttler@6.5.0(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.14)(reflect-metadata@0.2.2)':
+  '@nestjs/throttler@6.5.0(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.15)(reflect-metadata@0.2.2)':
     dependencies:
-      '@nestjs/common': 11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 11.1.14(@nestjs/common@11.1.14(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.14)(@nestjs/platform-express@11.1.14)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/core': 11.1.15(@nestjs/common@11.1.15(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/microservices@11.1.15)(@nestjs/platform-express@11.1.15)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       reflect-metadata: 0.2.2
 
   '@nodelib/fs.scandir@2.1.5':
@@ -10937,19 +10799,6 @@ snapshots:
       '@smithy/util-middleware': 4.2.10
       tslib: 2.8.1
 
-  '@smithy/core@3.23.6':
-    dependencies:
-      '@smithy/middleware-serde': 4.2.11
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/types': 4.13.0
-      '@smithy/util-base64': 4.3.1
-      '@smithy/util-body-length-browser': 4.2.1
-      '@smithy/util-middleware': 4.2.10
-      '@smithy/util-stream': 4.5.15
-      '@smithy/util-utf8': 4.2.1
-      '@smithy/uuid': 1.1.1
-      tslib: 2.8.1
-
   '@smithy/core@3.23.7':
     dependencies:
       '@smithy/middleware-serde': 4.2.11
@@ -10999,14 +10848,6 @@ snapshots:
     dependencies:
       '@smithy/eventstream-codec': 4.2.10
       '@smithy/types': 4.13.0
-      tslib: 2.8.1
-
-  '@smithy/fetch-http-handler@5.3.11':
-    dependencies:
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/querystring-builder': 4.2.10
-      '@smithy/types': 4.13.0
-      '@smithy/util-base64': 4.3.1
       tslib: 2.8.1
 
   '@smithy/fetch-http-handler@5.3.12':
@@ -11062,17 +10903,6 @@ snapshots:
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@smithy/middleware-endpoint@4.4.20':
-    dependencies:
-      '@smithy/core': 3.23.6
-      '@smithy/middleware-serde': 4.2.11
-      '@smithy/node-config-provider': 4.3.10
-      '@smithy/shared-ini-file-loader': 4.4.5
-      '@smithy/types': 4.13.0
-      '@smithy/url-parser': 4.2.10
-      '@smithy/util-middleware': 4.2.10
-      tslib: 2.8.1
-
   '@smithy/middleware-endpoint@4.4.21':
     dependencies:
       '@smithy/core': 3.23.7
@@ -11084,12 +10914,12 @@ snapshots:
       '@smithy/util-middleware': 4.2.10
       tslib: 2.8.1
 
-  '@smithy/middleware-retry@4.4.37':
+  '@smithy/middleware-retry@4.4.38':
     dependencies:
       '@smithy/node-config-provider': 4.3.10
       '@smithy/protocol-http': 5.3.10
       '@smithy/service-error-classification': 4.2.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       '@smithy/util-middleware': 4.2.10
       '@smithy/util-retry': 4.2.10
@@ -11111,14 +10941,6 @@ snapshots:
     dependencies:
       '@smithy/property-provider': 4.2.10
       '@smithy/shared-ini-file-loader': 4.4.5
-      '@smithy/types': 4.13.0
-      tslib: 2.8.1
-
-  '@smithy/node-http-handler@4.4.12':
-    dependencies:
-      '@smithy/abort-controller': 4.2.10
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/querystring-builder': 4.2.10
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
@@ -11171,16 +10993,6 @@ snapshots:
       '@smithy/util-utf8': 4.2.1
       tslib: 2.8.1
 
-  '@smithy/smithy-client@4.12.0':
-    dependencies:
-      '@smithy/core': 3.23.6
-      '@smithy/middleware-endpoint': 4.4.20
-      '@smithy/middleware-stack': 4.2.10
-      '@smithy/protocol-http': 5.3.10
-      '@smithy/types': 4.13.0
-      '@smithy/util-stream': 4.5.15
-      tslib: 2.8.1
-
   '@smithy/smithy-client@4.12.1':
     dependencies:
       '@smithy/core': 3.23.7
@@ -11229,20 +11041,20 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  '@smithy/util-defaults-mode-browser@4.3.36':
+  '@smithy/util-defaults-mode-browser@4.3.37':
     dependencies:
       '@smithy/property-provider': 4.2.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
-  '@smithy/util-defaults-mode-node@4.2.39':
+  '@smithy/util-defaults-mode-node@4.2.40':
     dependencies:
       '@smithy/config-resolver': 4.4.9
       '@smithy/credential-provider-imds': 4.2.10
       '@smithy/node-config-provider': 4.3.10
       '@smithy/property-provider': 4.2.10
-      '@smithy/smithy-client': 4.12.0
+      '@smithy/smithy-client': 4.12.1
       '@smithy/types': 4.13.0
       tslib: 2.8.1
 
@@ -11265,17 +11077,6 @@ snapshots:
     dependencies:
       '@smithy/service-error-classification': 4.2.10
       '@smithy/types': 4.13.0
-      tslib: 2.8.1
-
-  '@smithy/util-stream@4.5.15':
-    dependencies:
-      '@smithy/fetch-http-handler': 5.3.11
-      '@smithy/node-http-handler': 4.4.12
-      '@smithy/types': 4.13.0
-      '@smithy/util-base64': 4.3.1
-      '@smithy/util-buffer-from': 4.2.1
-      '@smithy/util-hex-encoding': 4.2.1
-      '@smithy/util-utf8': 4.2.1
       tslib: 2.8.1
 
   '@smithy/util-stream@4.5.16':
@@ -11373,11 +11174,11 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
 
   '@types/ejs@3.1.5': {}
 
@@ -11385,7 +11186,7 @@ snapshots:
 
   '@types/express-serve-static-core@5.1.1':
     dependencies:
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
       '@types/qs': 6.14.0
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -11407,7 +11208,7 @@ snapshots:
   '@types/jsonwebtoken@9.0.10':
     dependencies:
       '@types/ms': 2.1.0
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
 
   '@types/mjml-core@4.15.2':
     optional: true
@@ -11431,14 +11232,9 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/node@25.3.3':
-    dependencies:
-      undici-types: 7.18.2
-    optional: true
-
   '@types/nodemailer@6.4.23':
     dependencies:
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
 
   '@types/opossum@8.1.9':
     dependencies:
@@ -11481,12 +11277,12 @@ snapshots:
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
 
   '@types/serve-static@2.2.0':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 24.11.0
+      '@types/node': 22.19.13
 
   '@types/strip-bom@3.0.0': {}
 
@@ -11663,13 +11459,13 @@ snapshots:
     optionalDependencies:
       vite: 5.4.21(@types/node@22.19.13)
 
-  '@vitest/mocker@2.1.9(vite@5.4.21(@types/node@25.3.3))':
+  '@vitest/mocker@2.1.9(vite@5.4.21(@types/node@24.11.0))':
     dependencies:
       '@vitest/spy': 2.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 5.4.21(@types/node@25.3.3)
+      vite: 5.4.21(@types/node@24.11.0)
 
   '@vitest/pretty-format@2.1.9':
     dependencies:
@@ -11950,8 +11746,8 @@ snapshots:
   browserslist@4.28.1:
     dependencies:
       baseline-browser-mapping: 2.10.0
-      caniuse-lite: 1.0.30001775
-      electron-to-chromium: 1.5.302
+      caniuse-lite: 1.0.30001776
+      electron-to-chromium: 1.5.307
       node-releases: 2.0.27
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
 
@@ -12013,7 +11809,7 @@ snapshots:
 
   camelcase@6.3.0: {}
 
-  caniuse-lite@1.0.30001775: {}
+  caniuse-lite@1.0.30001776: {}
 
   chai@5.3.3:
     dependencies:
@@ -12422,7 +12218,7 @@ snapshots:
     dependencies:
       jake: 10.9.4
 
-  electron-to-chromium@1.5.302: {}
+  electron-to-chromium@1.5.307: {}
 
   emoji-regex@10.6.0: {}
 
@@ -12955,10 +12751,6 @@ snapshots:
 
   fast-xml-builder@1.0.0: {}
 
-  fast-xml-parser@5.3.6:
-    dependencies:
-      strnum: 2.2.0
-
   fast-xml-parser@5.4.1:
     dependencies:
       fast-xml-builder: 1.0.0
@@ -13033,10 +12825,10 @@ snapshots:
 
   flat-cache@4.0.1:
     dependencies:
-      flatted: 3.3.3
+      flatted: 3.3.4
       keyv: 4.5.4
 
-  flatted@3.3.3: {}
+  flatted@3.3.4: {}
 
   follow-redirects@1.15.11: {}
 
@@ -13690,6 +13482,9 @@ snapshots:
 
   lodash@4.17.21: {}
 
+  lodash@4.17.23:
+    optional: true
+
   log-update@6.1.0:
     dependencies:
       ansi-escapes: 7.3.0
@@ -13805,7 +13600,7 @@ snapshots:
   mjml-accordion@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13814,7 +13609,7 @@ snapshots:
   mjml-body@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13823,7 +13618,7 @@ snapshots:
   mjml-button@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13832,7 +13627,7 @@ snapshots:
   mjml-carousel@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13845,7 +13640,7 @@ snapshots:
       glob: 10.3.12
       html-minifier: 4.0.0
       js-beautify: 1.15.4
-      lodash: 4.17.21
+      lodash: 4.17.23
       minimatch: 9.0.9
       mjml-core: 4.18.0
       mjml-migrate: 4.18.0
@@ -13859,7 +13654,7 @@ snapshots:
   mjml-column@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13873,7 +13668,7 @@ snapshots:
       html-minifier: 4.0.0
       js-beautify: 1.15.4
       juice: 10.0.1
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-migrate: 4.18.0
       mjml-parser-xml: 4.18.0
       mjml-validator: 4.18.0
@@ -13884,7 +13679,7 @@ snapshots:
   mjml-divider@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13893,7 +13688,7 @@ snapshots:
   mjml-group@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13902,7 +13697,7 @@ snapshots:
   mjml-head-attributes@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13911,7 +13706,7 @@ snapshots:
   mjml-head-breakpoint@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13920,7 +13715,7 @@ snapshots:
   mjml-head-font@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13929,7 +13724,7 @@ snapshots:
   mjml-head-html-attributes@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13938,7 +13733,7 @@ snapshots:
   mjml-head-preview@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13947,7 +13742,7 @@ snapshots:
   mjml-head-style@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13956,7 +13751,7 @@ snapshots:
   mjml-head-title@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13965,7 +13760,7 @@ snapshots:
   mjml-head@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13974,7 +13769,7 @@ snapshots:
   mjml-hero@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13983,7 +13778,7 @@ snapshots:
   mjml-image@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -13993,7 +13788,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.6
       js-beautify: 1.15.4
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
       mjml-parser-xml: 4.18.0
       yargs: 17.7.2
@@ -14004,7 +13799,7 @@ snapshots:
   mjml-navbar@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14015,7 +13810,7 @@ snapshots:
       '@babel/runtime': 7.28.6
       detect-node: 2.1.0
       htmlparser2: 9.1.0
-      lodash: 4.17.21
+      lodash: 4.17.23
     optional: true
 
   mjml-preset-core@4.18.0:
@@ -14053,7 +13848,7 @@ snapshots:
   mjml-raw@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14062,7 +13857,7 @@ snapshots:
   mjml-section@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14071,7 +13866,7 @@ snapshots:
   mjml-social@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14080,7 +13875,7 @@ snapshots:
   mjml-spacer@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14089,7 +13884,7 @@ snapshots:
   mjml-table@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14098,7 +13893,7 @@ snapshots:
   mjml-text@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
     transitivePeerDependencies:
       - encoding
@@ -14112,7 +13907,7 @@ snapshots:
   mjml-wrapper@4.18.0:
     dependencies:
       '@babel/runtime': 7.28.6
-      lodash: 4.17.21
+      lodash: 4.17.23
       mjml-core: 4.18.0
       mjml-section: 4.18.0
     transitivePeerDependencies:
@@ -14131,10 +13926,6 @@ snapshots:
       - encoding
     optional: true
 
-  mkdirp@0.5.6:
-    dependencies:
-      minimist: 1.2.8
-
   mkdirp@1.0.4: {}
 
   mnemonist@0.38.3:
@@ -14145,15 +13936,12 @@ snapshots:
 
   ms@2.1.3: {}
 
-  multer@2.0.2:
+  multer@2.1.0:
     dependencies:
       append-field: 1.0.0
       busboy: 1.6.0
       concat-stream: 2.0.0
-      mkdirp: 0.5.6
-      object-assign: 4.1.1
       type-is: 1.6.18
-      xtend: 4.0.2
 
   mysql2@3.15.3:
     dependencies:
@@ -14523,29 +14311,29 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss-import@15.1.0(postcss@8.5.6):
+  postcss-import@15.1.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.11
 
-  postcss-js@4.1.0(postcss@8.5.6):
+  postcss-js@4.1.0(postcss@8.5.8):
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.5.6
+      postcss: 8.5.8
 
-  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.2):
+  postcss-load-config@6.0.1(jiti@1.21.7)(postcss@8.5.8)(yaml@2.8.2):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
       jiti: 1.21.7
-      postcss: 8.5.6
+      postcss: 8.5.8
       yaml: 2.8.2
 
-  postcss-nested@6.2.0(postcss@8.5.6):
+  postcss-nested@6.2.0(postcss@8.5.8):
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.8
       postcss-selector-parser: 6.1.2
 
   postcss-selector-parser@6.1.2:
@@ -14555,7 +14343,7 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.6:
+  postcss@8.5.8:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -15269,11 +15057,11 @@ snapshots:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.6
-      postcss-import: 15.1.0(postcss@8.5.6)
-      postcss-js: 4.1.0(postcss@8.5.6)
-      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.6)(yaml@2.8.2)
-      postcss-nested: 6.2.0(postcss@8.5.6)
+      postcss: 8.5.8
+      postcss-import: 15.1.0(postcss@8.5.8)
+      postcss-js: 4.1.0(postcss@8.5.8)
+      postcss-load-config: 6.0.1(jiti@1.21.7)(postcss@8.5.8)(yaml@2.8.2)
+      postcss-nested: 6.2.0(postcss@8.5.8)
       postcss-selector-parser: 6.1.2
       resolve: 1.22.11
       sucrase: 3.35.1
@@ -15404,32 +15192,32 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  turbo-darwin-64@2.8.12:
+  turbo-darwin-64@2.8.13:
     optional: true
 
-  turbo-darwin-arm64@2.8.12:
+  turbo-darwin-arm64@2.8.13:
     optional: true
 
-  turbo-linux-64@2.8.12:
+  turbo-linux-64@2.8.13:
     optional: true
 
-  turbo-linux-arm64@2.8.12:
+  turbo-linux-arm64@2.8.13:
     optional: true
 
-  turbo-windows-64@2.8.12:
+  turbo-windows-64@2.8.13:
     optional: true
 
-  turbo-windows-arm64@2.8.12:
+  turbo-windows-arm64@2.8.13:
     optional: true
 
-  turbo@2.8.12:
+  turbo@2.8.13:
     optionalDependencies:
-      turbo-darwin-64: 2.8.12
-      turbo-darwin-arm64: 2.8.12
-      turbo-linux-64: 2.8.12
-      turbo-linux-arm64: 2.8.12
-      turbo-windows-64: 2.8.12
-      turbo-windows-arm64: 2.8.12
+      turbo-darwin-64: 2.8.13
+      turbo-darwin-arm64: 2.8.13
+      turbo-linux-64: 2.8.13
+      turbo-linux-arm64: 2.8.13
+      turbo-windows-64: 2.8.13
+      turbo-windows-arm64: 2.8.13
 
   type-check@0.4.0:
     dependencies:
@@ -15530,9 +15318,6 @@ snapshots:
 
   undici-types@7.16.0: {}
 
-  undici-types@7.18.2:
-    optional: true
-
   unpipe@1.0.0: {}
 
   update-browserslist-db@1.2.3(browserslist@4.28.1):
@@ -15591,13 +15376,13 @@ snapshots:
       - supports-color
       - terser
 
-  vite-node@2.1.9(@types/node@25.3.3):
+  vite-node@2.1.9(@types/node@24.11.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.3
       es-module-lexer: 1.7.0
       pathe: 1.1.2
-      vite: 5.4.21(@types/node@25.3.3)
+      vite: 5.4.21(@types/node@24.11.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -15612,19 +15397,19 @@ snapshots:
   vite@5.4.21(@types/node@22.19.13):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.5.6
+      postcss: 8.5.8
       rollup: 4.59.0
     optionalDependencies:
       '@types/node': 22.19.13
       fsevents: 2.3.3
 
-  vite@5.4.21(@types/node@25.3.3):
+  vite@5.4.21(@types/node@24.11.0):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.5.6
+      postcss: 8.5.8
       rollup: 4.59.0
     optionalDependencies:
-      '@types/node': 25.3.3
+      '@types/node': 24.11.0
       fsevents: 2.3.3
 
   vite@7.3.1(@types/node@24.11.0)(jiti@1.21.7)(yaml@2.8.2):
@@ -15632,7 +15417,7 @@ snapshots:
       esbuild: 0.27.3
       fdir: 6.5.0(picomatch@4.0.3)
       picomatch: 4.0.3
-      postcss: 8.5.6
+      postcss: 8.5.8
       rollup: 4.59.0
       tinyglobby: 0.2.15
     optionalDependencies:
@@ -15676,10 +15461,10 @@ snapshots:
       - supports-color
       - terser
 
-  vitest@2.1.9(@types/node@25.3.3):
+  vitest@2.1.9(@types/node@24.11.0):
     dependencies:
       '@vitest/expect': 2.1.9
-      '@vitest/mocker': 2.1.9(vite@5.4.21(@types/node@25.3.3))
+      '@vitest/mocker': 2.1.9(vite@5.4.21(@types/node@24.11.0))
       '@vitest/pretty-format': 2.1.9
       '@vitest/runner': 2.1.9
       '@vitest/snapshot': 2.1.9
@@ -15695,11 +15480,11 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.1.1
       tinyrainbow: 1.2.0
-      vite: 5.4.21(@types/node@25.3.3)
-      vite-node: 2.1.9(@types/node@25.3.3)
+      vite: 5.4.21(@types/node@24.11.0)
+      vite-node: 2.1.9(@types/node@24.11.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 25.3.3
+      '@types/node': 24.11.0
     transitivePeerDependencies:
       - less
       - lightningcss

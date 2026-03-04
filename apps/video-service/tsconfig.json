@@ -7,6 +7,7 @@
     "paths": {
       "@video-service/*": ["./*"]
     },
+    "types": ["node", "multer"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true
