@@ -10,7 +10,7 @@ A full-stack streaming platform built with a microservices architecture. This pr
 | **Backend**        | NestJS, TypeScript                                              |
 | **Infrastructure** | pnpm, Turborepo (monorepo)                                      |
 | **Databases**      | PostgreSQL (Prisma), DynamoDB                                   |
-| **Cloud**          | AWS S3, AWS DynamoDB                                            |
+| **Cloud**          | AWS S3, AWS CloudFront, AWS DynamoDB                            |
 | **Messaging**      | RabbitMQ                                                        |
 | **Quality**        | ESLint, Prettier, Vitest, Husky                                 |
 
@@ -29,6 +29,10 @@ A full-stack streaming platform built with a microservices architecture. This pr
                            │              │ (S3, DynamoDB)  │
                            │              └─────────────────┘
                            │              ┌─────────────────┐
+                           ├─────────────▶│ Streaming       │
+                           │              │ (S3, CloudFront)│
+                           │              └─────────────────┘
+                           │              ┌─────────────────┐
                            └─────────────▶│ Notification    │
                                           │ (RabbitMQ)      │
                                           └─────────────────┘
@@ -38,6 +42,7 @@ A full-stack streaming platform built with a microservices architecture. This pr
 - **Auth Service**: User authentication, JWT issuance, PostgreSQL + Prisma
 - **User Service**: User management, event-driven via RabbitMQ
 - **Video Service**: Video upload to S3, metadata in DynamoDB
+- **Streaming Service**: HLS playback via CloudFront, presigned S3 URLs, fetches metadata from video-service
 - **Notification Service**: Email notifications via RabbitMQ consumers
 
 ## Getting Started
@@ -75,6 +80,7 @@ Each app has its own `.env` file. Copy `.env.example` (if available) and configu
 - **API Gateway**: `PORT`, `CORS_ORIGIN`, service URLs, JWT secret
 - **Auth Service**: Database URL, JWT secret, RabbitMQ
 - **Video Service**: AWS credentials, S3 bucket, DynamoDB table
+- **Streaming Service**: AWS credentials, S3 bucket, CloudFront URL, video-service URL
 - **Notification Service**: SMTP config, RabbitMQ
 
 ## Project Structure
@@ -86,6 +92,7 @@ streaming-project/
 │   ├── auth-service/    # Authentication (NestJS, Prisma)
 │   ├── user-service/    # User management (NestJS, Prisma)
 │   ├── video-service/   # Video upload & metadata (NestJS, S3, DynamoDB)
+│   ├── streaming-service/     # HLS playback, presigned URLs (NestJS, S3, CloudFront)
 │   ├── notification-service/  # Email notifications (NestJS, RabbitMQ)
 │   └── web/             # React frontend (Vite)
 ├── packages/
@@ -105,5 +112,5 @@ streaming-project/
 - **Monorepo**: Shared packages, consistent tooling, Turborepo for caching
 - **Microservices**: Each service owns its database; no cross-DB queries
 - **Event-driven**: RabbitMQ for async communication between services
-- **Cloud-native**: AWS S3 for storage, DynamoDB for scalable metadata
+- **Cloud-native**: AWS S3 for storage, CloudFront for HLS delivery, DynamoDB for scalable metadata
 - **Production-ready patterns**: Circuit breaker, rate limiting, validation (Zod), structured logging
